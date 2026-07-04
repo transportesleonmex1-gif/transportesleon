@@ -27,8 +27,8 @@ export default function HomePage() {
         <StatsBar />
         <UnitsGrid />
         <Gallery />
-        <CoverageAreas />
         <CargoTypes />
+        <CoverageAreas />
         <FinalCta />
       </main>
       <Footer />

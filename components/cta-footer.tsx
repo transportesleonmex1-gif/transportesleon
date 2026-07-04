@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 
 export function FinalCta() {
@@ -30,22 +31,63 @@ export function FinalCta() {
 
 export function Footer() {
   return (
-    <footer className="bg-gray-900 text-white/60 py-8 px-[6%] flex flex-col sm:flex-row justify-between items-center gap-4 text-[13px]">
-      <Image
-        src="/images/logo.jpg"
-        alt={siteConfig.name}
-        width={120}
-        height={36}
-        className="h-9 w-auto rounded-sm bg-white p-1"
-      />
-      <span>© {new Date().getFullYear()} {siteConfig.name} · {siteConfig.tagline}</span>
-      <div className="flex gap-5">
-        <a href={`tel:${siteConfig.phone}`} className="hover:text-white transition-colors">
-          {siteConfig.phoneDisplay}
-        </a>
-        <a href={siteConfig.social.instagram} className="hover:text-white transition-colors">
-          @transportesleonmx
-        </a>
+    <footer className="bg-gray-900 text-white/60">
+      <div className="px-[6%] py-10 grid grid-cols-2 sm:grid-cols-4 gap-8 text-xs border-b border-white/10 max-w-7xl mx-auto">
+        <div>
+          <div className="text-white font-semibold mb-3 text-[13px]">Ciudades</div>
+          <ul className="space-y-2">
+            {siteConfig.cities.map((city) => (
+              <li key={city.slug}>
+                <Link href={`/ciudades/${city.slug}`} className="hover:text-white transition-colors">
+                  {city.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <div className="text-white font-semibold mb-3 text-[13px]">Rutas</div>
+          <ul className="space-y-2">
+            {siteConfig.routes.map((route) => (
+              <li key={route.slug}>
+                <Link href={`/rutas/${route.slug}`} className="hover:text-white transition-colors">
+                  Flete a {route.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="col-span-2 sm:col-span-2">
+          <div className="text-white font-semibold mb-3 text-[13px]">Estados con cobertura</div>
+          <ul className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-2">
+            {siteConfig.states.map((state) => (
+              <li key={state.slug}>
+                <Link href={`/estados/${state.slug}`} className="hover:text-white transition-colors">
+                  {state.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <div className="py-8 px-[6%] flex flex-col sm:flex-row justify-between items-center gap-4 text-[13px] max-w-7xl mx-auto">
+        <Image
+          src="/images/logo.jpg"
+          alt={siteConfig.name}
+          width={120}
+          height={36}
+          className="h-9 w-auto rounded-sm bg-white p-1"
+        />
+        <span>© {new Date().getFullYear()} {siteConfig.name} · {siteConfig.tagline}</span>
+        <div className="flex gap-5">
+          <a href={`tel:${siteConfig.phone}`} className="hover:text-white transition-colors">
+            {siteConfig.phoneDisplay}
+          </a>
+          <a href={siteConfig.social.instagram} className="hover:text-white transition-colors">
+            @transportesleonmx
+          </a>
+        </div>
       </div>
     </footer>
   );

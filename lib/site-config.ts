@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Transportes León",
   shortName: "Transportes León",
   tagline: "Tu Solución En Movimiento",
-  url: "https://transportesleonmx.com",
+  url: "https://www.transportesleonmx.com",
   domain: "transportesleonmx.com",
   phone: "5561857646",
   phoneDisplay: "55 6185 7646",

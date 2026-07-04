@@ -73,7 +73,7 @@ export function CoverageAreas() {
       </h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5">
-        {siteConfig.states.map((state) => (
+        {siteConfig.states.slice(0, 8).map((state) => (
           <Link
             key={state.slug}
             href={`/estados/${state.slug}`}
@@ -85,6 +85,15 @@ export function CoverageAreas() {
             <span className="text-rojo text-lg font-bold">›</span>
           </Link>
         ))}
+
+        <div className="bg-azul-light border border-azul rounded-lg px-4.5 py-4 flex items-center justify-center col-span-2 sm:col-span-1 text-center">
+          <div>
+            <div className="text-[14px] font-semibold text-azul">
+              +{siteConfig.states.length - 8} estados más
+            </div>
+            <div className="text-xs text-gris mt-1">Cobertura en toda la República</div>
+          </div>
+        </div>
       </div>
     </section>
   );
