@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const title = `Flete CDMX a ${route.name}`;
-  const description = `${route.intro} Capacidad de 1 a 30 toneladas, servicio 24 horas. Cotiza tu flete a ${route.name} al ${siteConfig.phoneDisplay}.`;
+  const description = route.metaDescription;
 
   return {
     title,
@@ -43,9 +43,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `${siteConfig.url}/rutas/${route.slug}`,
       images: [
         {
-          url: "/images/hero-np300-ruta.jpg",
+          url: siteConfig.ogImage,
           width: 1200,
-          height: 1600,
+          height: 630,
           alt: `Flete foráneo de CDMX a ${route.name}`,
         },
       ],

@@ -71,22 +71,36 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="py-8 px-[6%] flex flex-col sm:flex-row justify-between items-center gap-4 text-[13px] max-w-7xl mx-auto">
+      <div className="py-10 px-[6%] flex flex-col items-center gap-4 text-[13px] max-w-7xl mx-auto text-center">
         <Image
-          src="/images/logo.jpg"
+          src="/images/logo.svg"
           alt={siteConfig.name}
-          width={120}
-          height={36}
-          className="h-9 w-auto rounded-sm bg-white p-1"
+          width={140}
+          height={56}
+          className="h-10 w-auto"
+          unoptimized
         />
-        <span>© {new Date().getFullYear()} {siteConfig.name} · {siteConfig.tagline}</span>
-        <div className="flex gap-5">
-          <a href={`tel:${siteConfig.phone}`} className="hover:text-white transition-colors">
-            {siteConfig.phoneDisplay}
-          </a>
-          <a href={siteConfig.social.instagram} className="hover:text-white transition-colors">
-            @transportesleonmx
-          </a>
+        <Image
+          src="/images/eslogan.svg"
+          alt={siteConfig.tagline}
+          width={280}
+          height={39}
+          className="h-6 w-auto opacity-90"
+          unoptimized
+        />
+        <div className="flex flex-col sm:flex-row items-center gap-4 mt-2">
+          <span>© {new Date().getFullYear()} {siteConfig.name}</span>
+          <div className="flex gap-5">
+            <a href={`tel:${siteConfig.phone}`} className="hover:text-white transition-colors">
+              {siteConfig.phoneDisplay}
+            </a>
+            <a href={siteConfig.social.instagram} className="hover:text-white transition-colors">
+              @transportesleonmx
+            </a>
+            <a href={siteConfig.social.googleBusiness} className="hover:text-white transition-colors">
+              ⭐ Ver reseñas en Google
+            </a>
+          </div>
         </div>
       </div>
     </footer>

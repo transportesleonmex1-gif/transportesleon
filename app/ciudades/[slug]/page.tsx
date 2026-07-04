@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const title = `Fletes en ${city.name}`;
-  const description = `${city.intro} Cotiza tu flete local o foráneo desde ${city.name} al ${siteConfig.phoneDisplay}.`;
+  const description = city.metaDescription;
 
   return {
     title,
@@ -43,9 +43,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `${siteConfig.url}/ciudades/${city.slug}`,
       images: [
         {
-          url: "/images/hero-np300-ruta.jpg",
+          url: siteConfig.ogImage,
           width: 1200,
-          height: 1600,
+          height: 630,
           alt: `Transportes León en ${city.name}`,
         },
       ],

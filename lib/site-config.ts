@@ -4,28 +4,22 @@ export const siteConfig = {
   tagline: "Tu Solución En Movimiento",
   url: "https://www.transportesleonmx.com",
   domain: "transportesleonmx.com",
+  ogImage: "/images/og-cover.jpg",
   phone: "5561857646",
   phoneDisplay: "55 6185 7646",
   whatsapp: "525561857646",
   description:
-    "Fletes foráneos desde CDMX, Naucalpan, Tlalnepantla, Atizapán, Cuautitlán Izcalli y Tepotzotlán. Flotilla de 1 a 30 toneladas: NP300, torton cama plana, camión caja seca y trailer 53 pies. Servicio 24 horas, fletes urgentes.",
+    "Fletes foráneos desde CDMX y Edo. Méx. Flotilla de 1 a 30 toneladas. Servicio 24 horas, fletes urgentes. Cotiza ya.",
   social: {
     instagram: "https://www.instagram.com/transportesleonmx",
     facebook: "https://www.facebook.com/transportesleonmx",
+    googleBusiness: "https://maps.app.goo.gl/QJrKA14hHSMMNcRR6",
   },
   address: {
     addressLocality: "Naucalpan de Juárez",
     addressRegion: "México",
     addressCountry: "MX",
   },
-  serviceAreas: [
-    "Ciudad de México",
-    "Naucalpan de Juárez",
-    "Atizapán de Zaragoza",
-    "Tlalnepantla de Baz",
-    "Cuautitlán Izcalli",
-    "Tepotzotlán",
-  ],
   cities: [
     {
       slug: "naucalpan",
@@ -34,6 +28,7 @@ export const siteConfig = {
       intro:
         "Naucalpan es nuestra base de operaciones. Damos servicio a colonias, parques industriales y zonas comerciales de todo el municipio, incluyendo Ciudad Satélite, Naucalpan Centro y las zonas industriales cercanas a la México-Toluca, con salida inmediata para fletes locales y foráneos.",
       highlight: "Base de operaciones y salida principal de la flotilla.",
+      metaDescription: "Fletes locales y foráneos en Naucalpan de Juárez, Estado de México. Cotiza al 55 6185 7646, servicio 24 horas, 1 a 30 toneladas.",
     },
     {
       slug: "tlalnepantla",
@@ -42,6 +37,7 @@ export const siteConfig = {
       intro:
         "En Tlalnepantla atendemos tanto la zona industrial de Vallejo-Tlalnepantla como los corredores comerciales cercanos al Periférico y la Autopista México-Querétaro. Es una de nuestras zonas con mayor frecuencia de fletes locales hacia CDMX y foráneos hacia el Bajío.",
       highlight: "Alta frecuencia de fletes hacia el corredor industrial del Bajío.",
+      metaDescription: "Fletes locales y foráneos en Tlalnepantla de Baz, Estado de México. Cotiza al 55 6185 7646, servicio 24 horas, 1 a 30 toneladas.",
     },
     {
       slug: "atizapan",
@@ -50,6 +46,7 @@ export const siteConfig = {
       intro:
         "En Atizapán de Zaragoza cubrimos tanto la zona urbana como los desarrollos industriales y comerciales cercanos a Lago de Guadalupe y la carretera a Toluca, con unidades disponibles para carga ligera y pesada.",
       highlight: "Cobertura desde Lago de Guadalupe hasta zona centro.",
+      metaDescription: "Fletes locales y foráneos en Atizapán de Zaragoza, Estado de México. Cotiza al 55 6185 7646, servicio 24 horas, 1 a 30 toneladas.",
     },
     {
       slug: "tepotzotlan",
@@ -58,6 +55,7 @@ export const siteConfig = {
       intro:
         "Tepotzotlán es punto estratégico de salida hacia el Bajío y el norte del país gracias a su cercanía con la autopista México-Querétaro. Damos servicio a parques industriales, bodegas logísticas y zona centro del municipio.",
       highlight: "Punto estratégico de salida hacia el Bajío y el norte.",
+      metaDescription: "Fletes locales y foráneos en Tepotzotlán, Estado de México. Cotiza al 55 6185 7646, servicio 24 horas, 1 a 30 toneladas.",
     },
     {
       slug: "cuautitlan-izcalli",
@@ -66,6 +64,7 @@ export const siteConfig = {
       intro:
         "En Cuautitlán Izcalli atendemos la importante zona industrial del municipio, con experiencia en carga para plantas manufactureras, centros de distribución y comercios ubicados sobre la vía José López Portillo y sus alrededores.",
       highlight: "Experiencia en carga industrial y centros de distribución.",
+      metaDescription: "Fletes locales y foráneos en Cuautitlán Izcalli, Estado de México. Cotiza al 55 6185 7646, servicio 24 horas, 1 a 30 toneladas.",
     },
     {
       slug: "ciudad-de-mexico",
@@ -74,6 +73,7 @@ export const siteConfig = {
       intro:
         "Cubrimos toda la Ciudad de México, desde alcaldías del norte como Azcapotzalco y Gustavo A. Madero hasta el poniente y sur de la ciudad. Es nuestro punto de conexión principal para fletes locales y el origen más común de nuestras rutas foráneas.",
       highlight: "Cobertura en todas las alcaldías y origen principal de rutas foráneas.",
+      metaDescription: "Fletes locales y foráneos en Ciudad de México, CDMX. Cotiza al 55 6185 7646, servicio 24 horas, 1 a 30 toneladas.",
     },
   ],
   routes: [
@@ -84,6 +84,7 @@ export const siteConfig = {
       duration: "2 h 30 min aprox.",
       intro:
         "Transportamos carga foránea de CDMX y zona metro a Querétaro y su área metropolitana, incluyendo parques industriales y zona centro.",
+      metaDescription: "Flete foráneo de CDMX a Querétaro (220 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
     },
     {
       slug: "puebla",
@@ -92,6 +93,7 @@ export const siteConfig = {
       duration: "1 h 45 min aprox.",
       intro:
         "Servicio de flete foráneo desde CDMX hacia Puebla capital y municipios cercanos, ideal para carga industrial y comercial.",
+      metaDescription: "Flete foráneo de CDMX a Puebla (130 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
     },
     {
       slug: "toluca",
@@ -100,6 +102,7 @@ export const siteConfig = {
       duration: "1 hora aprox.",
       intro:
         "Ruta corta y frecuente desde CDMX y Naucalpan hacia Toluca, perfecta para entregas same-day de materiales y mercancía.",
+      metaDescription: "Flete foráneo de CDMX a Toluca (65 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
     },
     {
       slug: "pachuca",
@@ -108,6 +111,7 @@ export const siteConfig = {
       duration: "1 h 15 min aprox.",
       intro:
         "Flete foráneo desde CDMX y Tepotzotlán hacia Pachuca, cubriendo zona industrial y centro de la ciudad.",
+      metaDescription: "Flete foráneo de CDMX a Pachuca (90 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
     },
     {
       slug: "cuernavaca",
@@ -116,6 +120,7 @@ export const siteConfig = {
       duration: "1 h 10 min aprox.",
       intro:
         "Transporte de carga desde CDMX hacia Cuernavaca y zona metropolitana de Morelos.",
+      metaDescription: "Flete foráneo de CDMX a Cuernavaca (85 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
     },
     {
       slug: "oaxaca-centro",
@@ -124,6 +129,7 @@ export const siteConfig = {
       duration: "6 h 30 min aprox.",
       intro:
         "Flete foráneo de larga distancia desde CDMX hasta Oaxaca Centro, con unidades preparadas para viajes largos y carga asegurada.",
+      metaDescription: "Flete foráneo de CDMX a Oaxaca Centro (460 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
     },
     {
       slug: "acapulco",
@@ -132,6 +138,7 @@ export const siteConfig = {
       duration: "5 h 30 min aprox.",
       intro:
         "Servicio de flete foráneo desde CDMX, Naucalpan y zona metro hacia Acapulco, cubriendo zona centro, costera y zona dorada. Ideal para traslado de mercancía, equipo comercial, materiales de construcción y carga industrial que necesita llegar a Acapulco con operador de confianza.",
+      metaDescription: "Flete foráneo de CDMX a Acapulco (400 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
     },
   ],
   states: [
@@ -143,6 +150,7 @@ export const siteConfig = {
       intro:
         "Transportamos carga desde CDMX y zona metro hasta Guadalajara y su zona metropolitana, incluyendo parques industriales de El Salto y Zapopan. Ideal para mercancía industrial, ferretera y equipo comercial que necesita llegar al occidente del país.",
       industries: ["Manufactura", "Tecnología", "Comercio"],
+      metaDescription: "Transporte de carga a Querétaro desde CDMX: Automotriz, Aeroespacial y Logística. Servicio 24h, 1 a 30 toneladas.",
     },
     {
       slug: "nuevo-leon",
@@ -152,6 +160,7 @@ export const siteConfig = {
       intro:
         "Servicio de flete foráneo de larga distancia hacia Monterrey y su área metropolitana, con unidades preparadas para viajes largos, carga asegurada y facturación para empresas del corredor industrial regiomontano.",
       industries: ["Industria pesada", "Acero", "Manufactura"],
+      metaDescription: "Transporte de carga a Nuevo León desde CDMX: Industria pesada, Acero y Manufactura. Servicio 24h, 1 a 30 toneladas.",
     },
     {
       slug: "queretaro",
@@ -161,6 +170,7 @@ export const siteConfig = {
       intro:
         "Querétaro es uno de nuestros destinos foráneos más frecuentes por su cercanía con CDMX y su fuerte actividad industrial. Cubrimos parques industriales, zona Bernardo Quintana y municipios cercanos como El Marqués.",
       industries: ["Automotriz", "Aeroespacial", "Logística"],
+      metaDescription: "Querétaro es uno de nuestros destinos foráneos más frecuentes por su cercanía con CDMX y su fuerte actividad industrial. Transporte de carga foráneo a.",
     },
     {
       slug: "guanajuato",
@@ -170,6 +180,7 @@ export const siteConfig = {
       intro:
         "Damos servicio a todo el corredor industrial del Bajío guanajuatense: León, Celaya, Irapuato y Silao, con experiencia en carga automotriz, de calzado y manufactura ligera.",
       industries: ["Automotriz", "Calzado", "Manufactura"],
+      metaDescription: "Transporte de carga foráneo a Guanajuato desde CDMX. Atendemos los sectores de Automotriz, Calzado y Manufactura. Servicio 24 horas, 1 a 30 toneladas.",
     },
     {
       slug: "puebla",
@@ -179,6 +190,7 @@ export const siteConfig = {
       intro:
         "Flete foráneo frecuente desde CDMX hacia Puebla capital y su zona industrial, con rutas también hacia Cholula y municipios cercanos. Buena opción para carga comercial e industrial de corto trayecto.",
       industries: ["Automotriz", "Textil", "Comercio"],
+      metaDescription: "Flete foráneo frecuente desde CDMX hacia Puebla capital y su zona industrial, con rutas también hacia Cholula y municipios cercanos. Transporte de carga.",
     },
     {
       slug: "michoacan",
@@ -188,6 +200,7 @@ export const siteConfig = {
       intro:
         "Cubrimos Morelia y municipios agrícolas del estado, con experiencia especial en carga de productos del campo, insumos agrícolas y maquinaria para la región del Bajío michoacano.",
       industries: ["Agricultura", "Agroindustria", "Comercio"],
+      metaDescription: "Transporte de carga a Michoacán desde CDMX: Agricultura, Agroindustria y Comercio. Servicio 24h, 1 a 30 toneladas.",
     },
     {
       slug: "veracruz",
@@ -197,6 +210,7 @@ export const siteConfig = {
       intro:
         "Servicio de carga hacia Veracruz puerto y Xalapa, ideal para mercancía relacionada con comercio exterior, distribución y carga industrial que se mueve entre el centro del país y el Golfo de México.",
       industries: ["Comercio exterior", "Petroquímica", "Agroindustria"],
+      metaDescription: "Transporte de carga a Veracruz desde CDMX: Comercio exterior, Petroquímica y Agroindustria. Servicio 24h, 1 a 30 toneladas.",
     },
     {
       slug: "san-luis-potosi",
@@ -206,6 +220,7 @@ export const siteConfig = {
       intro:
         "Transportamos carga hacia el corredor industrial de San Luis Potosí, punto clave de conexión logística entre el centro y el norte de México, con experiencia en manufactura y distribución.",
       industries: ["Manufactura", "Logística", "Automotriz"],
+      metaDescription: "Transporte de carga a San Luis Potosí desde CDMX: Manufactura, Logística y Automotriz. Servicio 24h, 1 a 30 toneladas.",
     },
     {
       slug: "aguascalientes",
@@ -215,6 +230,7 @@ export const siteConfig = {
       intro:
         "Servicio foráneo hacia Aguascalientes capital y su zona industrial, con unidades preparadas para carga automotriz y manufacturera de mediano y largo trayecto desde CDMX.",
       industries: ["Automotriz", "Manufactura"],
+      metaDescription: "Transporte de carga foráneo a Aguascalientes desde CDMX. Atendemos los sectores de Automotriz y Manufactura. Servicio 24 horas, 1 a 30 toneladas.",
     },
     {
       slug: "estado-de-mexico",
@@ -224,6 +240,7 @@ export const siteConfig = {
       intro:
         "El Estado de México es nuestra zona de mayor cobertura: desde Naucalpan y Tlalnepantla hasta Toluca y municipios industriales de todo el territorio mexiquense, con servicio local y foráneo el mismo día.",
       industries: ["Industria diversa", "Comercio", "Logística"],
+      metaDescription: "Transporte de carga a Estado de México desde CDMX: Industria diversa, Comercio y Logística. Servicio 24h, 1 a 30 toneladas.",
     },
     {
       slug: "morelos",
@@ -231,8 +248,9 @@ export const siteConfig = {
       capital: "Cuernavaca",
       km: 85,
       intro:
-        "Cubrimos Cuernavaca y la zona metropolitana de Morelos, con rutas frecuentes desde CDMX ideales para carga comercial, mudanzas parciales y distribución de mercancía.",
+        "Cubrimos Cuernavaca y la zona metropolitana de Morelos, con rutas frecuentes desde CDMX ideales para carga comercial y distribución de mercancía.",
       industries: ["Comercio", "Turismo", "Agroindustria"],
+      metaDescription: "Transporte de carga foráneo a Morelos desde CDMX. Atendemos los sectores de Comercio, Turismo y Agroindustria. Servicio 24 horas, 1 a 30 toneladas.",
     },
     {
       slug: "hidalgo",
@@ -242,6 +260,7 @@ export const siteConfig = {
       intro:
         "Damos servicio a Pachuca y la zona industrial de Tepeji-Tula, con experiencia en carga de materiales de construcción, maquinaria y mercancía comercial desde CDMX y Tepotzotlán.",
       industries: ["Industria del cemento", "Manufactura", "Comercio"],
+      metaDescription: "Transporte de carga a Hidalgo desde CDMX: Industria del cemento, Manufactura y Comercio. Servicio 24h, 1 a 30 toneladas.",
     },
     {
       slug: "oaxaca",
@@ -251,6 +270,7 @@ export const siteConfig = {
       intro:
         "Flete foráneo de larga distancia hacia Oaxaca Centro, con unidades preparadas para viajes largos y carga asegurada, ideal para comercio y distribución hacia el sureste del país.",
       industries: ["Comercio", "Artesanías", "Agroindustria"],
+      metaDescription: "Transporte de carga foráneo a Oaxaca desde CDMX. Atendemos los sectores de Comercio, Artesanías y Agroindustria. Servicio 24 horas, 1 a 30 toneladas.",
     },
     {
       slug: "guerrero",
@@ -260,6 +280,7 @@ export const siteConfig = {
       intro:
         "Cubrimos Acapulco, Chilpancingo y zona costera de Guerrero, con experiencia en traslado de mercancía comercial, equipo hotelero y materiales de construcción hacia la región.",
       industries: ["Turismo", "Comercio", "Construcción"],
+      metaDescription: "Transporte de carga foráneo a Guerrero desde CDMX. Atendemos los sectores de Turismo, Comercio y Construcción. Servicio 24 horas, 1 a 30 toneladas.",
     },
     {
       slug: "tamaulipas",
@@ -269,6 +290,7 @@ export const siteConfig = {
       intro:
         "Servicio de larga distancia hacia Tamaulipas, con experiencia en carga industrial y de comercio exterior para empresas que operan hacia la frontera norte del país.",
       industries: ["Comercio exterior", "Industria maquiladora"],
+      metaDescription: "Transporte de carga a Tamaulipas desde CDMX: Comercio exterior y Industria maquiladora. Servicio 24h, 1 a 30 toneladas.",
     },
     {
       slug: "coahuila",
@@ -278,6 +300,7 @@ export const siteConfig = {
       intro:
         "Flete foráneo de larga distancia hacia Saltillo y su corredor industrial automotriz, con unidades preparadas para viajes largos y carga asegurada durante todo el trayecto.",
       industries: ["Automotriz", "Industria pesada"],
+      metaDescription: "Transporte de carga foráneo a Coahuila desde CDMX. Atendemos los sectores de Automotriz y Industria pesada. Servicio 24 horas, 1 a 30 toneladas.",
     },
     {
       slug: "chihuahua",
@@ -287,6 +310,7 @@ export const siteConfig = {
       intro:
         "Cubrimos rutas de largo trayecto hacia Chihuahua capital, ideales para carga industrial y comercial que necesita conexión entre el centro del país y el norte.",
       industries: ["Industria maquiladora", "Manufactura"],
+      metaDescription: "Transporte de carga foráneo a Chihuahua desde CDMX. Atendemos los sectores de Industria maquiladora y Manufactura. Servicio 24 horas, 1 a 30 toneladas.",
     },
     {
       slug: "sonora",
@@ -296,6 +320,7 @@ export const siteConfig = {
       intro:
         "Servicio de flete foráneo de muy larga distancia hacia Hermosillo, pensado para empresas con necesidad de distribución nacional hasta el noroeste del país.",
       industries: ["Agroindustria", "Manufactura"],
+      metaDescription: "Transporte de carga foráneo a Sonora desde CDMX. Atendemos los sectores de Agroindustria y Manufactura. Servicio 24 horas, 1 a 30 toneladas.",
     },
     {
       slug: "yucatan",
@@ -305,6 +330,7 @@ export const siteConfig = {
       intro:
         "Transportamos carga de larga distancia hacia Mérida, ideal para comercio, distribución y mercancía industrial que necesita llegar a la península de Yucatán.",
       industries: ["Comercio", "Turismo", "Industria henequenera"],
+      metaDescription: "Transporte de carga a Yucatán desde CDMX: Comercio, Turismo y Industria henequenera. Servicio 24h, 1 a 30 toneladas.",
     },
     {
       slug: "quintana-roo",
@@ -314,6 +340,7 @@ export const siteConfig = {
       intro:
         "Cubrimos rutas de largo trayecto hacia Quintana Roo, con experiencia en carga comercial y de equipo hotelero para la zona turística del Caribe mexicano.",
       industries: ["Turismo", "Comercio"],
+      metaDescription: "Transporte de carga foráneo a Quintana Roo desde CDMX. Atendemos los sectores de Turismo y Comercio. Servicio 24 horas, 1 a 30 toneladas.",
     },
   ],
   units: [

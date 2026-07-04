@@ -1,24 +1,29 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/site-config";
 
+// Fecha de la última actualización de contenido (actualizar manualmente cuando
+// se agregue o edite contenido de rutas/ciudades/estados). Usar una fecha fija
+// evita que el sitemap reporte "recién modificado" en cada build sin motivo real.
+const CONTENT_LAST_MODIFIED = new Date("2026-07-04");
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const routePages: MetadataRoute.Sitemap = siteConfig.routes.map((route) => ({
     url: `${siteConfig.url}/rutas/${route.slug}`,
-    lastModified: new Date(),
+    lastModified: CONTENT_LAST_MODIFIED,
     changeFrequency: "monthly",
     priority: 0.8,
   }));
 
   const cityPages: MetadataRoute.Sitemap = siteConfig.cities.map((city) => ({
     url: `${siteConfig.url}/ciudades/${city.slug}`,
-    lastModified: new Date(),
+    lastModified: CONTENT_LAST_MODIFIED,
     changeFrequency: "monthly",
     priority: 0.8,
   }));
 
   const statePages: MetadataRoute.Sitemap = siteConfig.states.map((state) => ({
     url: `${siteConfig.url}/estados/${state.slug}`,
-    lastModified: new Date(),
+    lastModified: CONTENT_LAST_MODIFIED,
     changeFrequency: "monthly",
     priority: 0.7,
   }));
@@ -26,7 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: siteConfig.url,
-      lastModified: new Date(),
+      lastModified: CONTENT_LAST_MODIFIED,
       changeFrequency: "weekly",
       priority: 1,
     },

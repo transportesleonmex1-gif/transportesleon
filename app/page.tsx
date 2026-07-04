@@ -11,7 +11,9 @@ import { MobileCtaBar } from "@/components/mobile-cta-bar";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Fletes Foráneos CDMX, Naucalpan y Tlalnepantla | 1 a 30 Toneladas",
+  title: {
+    absolute: "Transportes León | Fletes Foráneos CDMX, 1 a 30 Toneladas",
+  },
   description: siteConfig.description,
   alternates: {
     canonical: "/",
@@ -26,9 +28,9 @@ export default function HomePage() {
         <Hero />
         <StatsBar />
         <UnitsGrid />
-        <Gallery />
         <CargoTypes />
         <CoverageAreas />
+        <Gallery />
         <FinalCta />
       </main>
       <Footer />

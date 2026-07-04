@@ -51,10 +51,10 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: "/images/hero-np300-ruta.jpg",
+        url: siteConfig.ogImage,
         width: 1200,
-        height: 1600,
-        alt: "Camioneta NP300 de Transportes León en ruta foránea",
+        height: 630,
+        alt: `${siteConfig.name} - Fletes foráneos CDMX`,
       },
     ],
   },
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${siteConfig.name} | Fletes Foráneos CDMX`,
     description: siteConfig.description,
-    images: ["/images/hero-np300-ruta.jpg"],
+    images: [siteConfig.ogImage],
   },
   robots: {
     index: true,
@@ -79,14 +79,17 @@ export const metadata: Metadata = {
     google: "Au3sG0EsmdyqgzaovuiAsKL8uwBpKfvahD-qAZ1D5dc",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
   },
 };
 
 function LocalBusinessJsonLd() {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "Service"],
+    "@type": "LocalBusiness",
     "@id": `${siteConfig.url}/#organization`,
     name: siteConfig.name,
     alternateName: "Transportes León Fletes Foráneos",
@@ -94,7 +97,7 @@ function LocalBusinessJsonLd() {
     url: siteConfig.url,
     telephone: `+52${siteConfig.phone}`,
     image: `${siteConfig.url}/images/hero-np300-ruta.jpg`,
-    logo: `${siteConfig.url}/images/logo.jpg`,
+    logo: `${siteConfig.url}/images/logo.png`,
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",
@@ -102,9 +105,9 @@ function LocalBusinessJsonLd() {
       addressRegion: siteConfig.address.addressRegion,
       addressCountry: siteConfig.address.addressCountry,
     },
-    areaServed: siteConfig.serviceAreas.map((area) => ({
+    areaServed: siteConfig.cities.map((city) => ({
       "@type": "City",
-      name: area,
+      name: city.name,
     })),
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
@@ -120,7 +123,11 @@ function LocalBusinessJsonLd() {
       opens: "00:00",
       closes: "23:59",
     },
-    sameAs: [siteConfig.social.instagram, siteConfig.social.facebook],
+    sameAs: [
+      siteConfig.social.instagram,
+      siteConfig.social.facebook,
+      siteConfig.social.googleBusiness,
+    ],
     makesOffer: siteConfig.units.map((unit) => ({
       "@type": "Offer",
       itemOffered: {

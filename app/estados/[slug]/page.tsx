@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const title = `Transporte de Carga a ${state.name}`;
-  const description = `${state.intro} Cotiza tu flete a ${state.name} al ${siteConfig.phoneDisplay}.`;
+  const description = state.metaDescription;
 
   return {
     title,
@@ -43,9 +43,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `${siteConfig.url}/estados/${state.slug}`,
       images: [
         {
-          url: "/images/hero-np300-ruta.jpg",
+          url: siteConfig.ogImage,
           width: 1200,
-          height: 1600,
+          height: 630,
           alt: `Transporte de carga a ${state.name}`,
         },
       ],

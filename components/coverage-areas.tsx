@@ -65,7 +65,7 @@ export function CoverageAreas() {
         </div>
       </div>
 
-      <p className="text-xs font-semibold uppercase tracking-widest text-rojo mb-2.5">
+      <p className="text-xs font-semibold uppercase tracking-widest text-rojo mb-2.5 mt-14 pt-8 border-t border-borde">
         Cobertura nacional
       </p>
       <h2 className="font-display text-[32px] sm:text-[44px] lg:text-[52px] text-gray-900 leading-none mb-10">

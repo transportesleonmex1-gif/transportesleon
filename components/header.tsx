@@ -14,14 +14,15 @@ export function Header() {
       </div>
 
       <header className="sticky top-0 z-50 bg-white border-b border-borde">
-        <nav className="flex items-center justify-between h-[70px] px-[5%] max-w-7xl mx-auto">
+        <nav className="flex items-center justify-between h-[84px] px-[5%] max-w-7xl mx-auto">
           <Link href="/" className="flex items-center" aria-label={`${siteConfig.name} - Inicio`}>
             <Image
-              src="/images/logo.jpg"
+              src="/images/logo.svg"
               alt={`${siteConfig.name} - ${siteConfig.tagline}`}
-              width={160}
-              height={48}
-              className="h-12 w-auto"
+              width={250}
+              height={101}
+              className="h-14 sm:h-16 w-auto"
+              unoptimized
               priority
             />
           </Link>
