@@ -1,0 +1,54 @@
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/bebas-neue/400.css";
+@import "tailwindcss";
+
+:root {
+  --color-rojo: #C0251E;
+  --color-rojo-dark: #9E1E18;
+  --color-azul: #1A4AAB;
+  --color-azul-light: #E8EEF8;
+  --color-negro: #111827;
+  --color-gris: #6B7280;
+  --color-gris-claro: #F9FAFB;
+  --color-borde: #E5E7EB;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Bebas Neue", "Inter", system-ui, sans-serif;
+}
+
+@theme inline {
+  --color-rojo: var(--color-rojo);
+  --color-rojo-dark: var(--color-rojo-dark);
+  --color-azul: var(--color-azul);
+  --color-azul-light: var(--color-azul-light);
+  --color-gris: var(--color-gris);
+  --color-gris-claro: var(--color-gris-claro);
+  --color-borde: var(--color-borde);
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-negro);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-azul);
+  outline-offset: 2px;
+}
