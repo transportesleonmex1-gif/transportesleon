@@ -1,4 +1,7 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { siteConfig } from "@/lib/site-config";
 import "./globals.css";
 
@@ -160,6 +163,20 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased">
         {children}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.ga4MeasurementId}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${siteConfig.ga4MeasurementId}');
+          `}
+        </Script>
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
