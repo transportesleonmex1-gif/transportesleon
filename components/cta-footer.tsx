@@ -32,7 +32,7 @@ export function FinalCta() {
 export function Footer() {
   return (
     <footer className="bg-gray-900 text-white/60">
-      <div className="px-[6%] py-10 grid grid-cols-2 sm:grid-cols-4 gap-8 text-xs border-b border-white/10 max-w-7xl mx-auto">
+      <div className="px-[6%] py-10 grid grid-cols-2 sm:grid-cols-5 gap-8 text-xs border-b border-white/10 max-w-7xl mx-auto">
         <div>
           <div className="text-white font-semibold mb-3 text-[13px]">Ciudades</div>
           <ul className="space-y-2">
@@ -52,6 +52,18 @@ export function Footer() {
               <li key={route.slug}>
                 <Link href={`/rutas/${route.slug}`} className="hover:text-white transition-colors">
                   Flete a {route.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <div className="text-white font-semibold mb-3 text-[13px]">Fletes de retorno</div>
+          <ul className="space-y-2">
+            {siteConfig.retornos.map((retorno) => (
+              <li key={retorno.slug}>
+                <Link href={`/retornos/${retorno.slug}`} className="hover:text-white transition-colors">
+                  {retorno.name} a CDMX
                 </Link>
               </li>
             ))}

@@ -343,6 +343,53 @@ export const siteConfig = {
       metaDescription: "Transporte de carga foráneo a Quintana Roo desde CDMX. Atendemos los sectores de Turismo y Comercio. Servicio 24 horas, 1 a 30 toneladas.",
     },
   ],
+  retornos: [
+    {
+      slug: "puebla",
+      name: "Puebla",
+      km: 130,
+      duration: "1 h 45 min aprox.",
+      intro:
+        "Si tienes carga en Puebla y necesitas enviarla a CDMX, Naucalpan, Tlalnepantla o cualquier punto de la zona metropolitana, contamos con unidades que hacen este trayecto de regreso con frecuencia y tarifa preferencial. Ideal para empresas de Puebla que distribuyen hacia el centro del país.",
+      metaDescription: "Flete de Puebla a CDMX y zona metropolitana con tarifa preferencial. Unidades de 1 a 30 toneladas. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "queretaro",
+      name: "Querétaro",
+      km: 220,
+      duration: "2 h 30 min aprox.",
+      intro:
+        "Transportamos carga de Querétaro hacia CDMX y la zona metropolitana (Naucalpan, Tlalnepantla, Atizapán) con tarifa preferencial por tratarse de un viaje de regreso. Buena opción para empresas del corredor industrial de Querétaro que necesitan distribuir hacia el centro del país.",
+      metaDescription: "Flete de Querétaro a CDMX y zona metropolitana con tarifa preferencial. Unidades de 1 a 30 toneladas. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "oaxaca",
+      name: "Oaxaca",
+      km: 460,
+      duration: "6 h 30 min aprox.",
+      intro:
+        "Si necesitas enviar carga desde Oaxaca hacia CDMX o la zona metropolitana, ofrecemos este trayecto de regreso con tarifa preferencial, unidades preparadas para viajes largos y carga asegurada durante todo el recorrido.",
+      metaDescription: "Flete de Oaxaca a CDMX y zona metropolitana con tarifa preferencial. Unidades de 1 a 30 toneladas, carga asegurada. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "veracruz",
+      name: "Veracruz",
+      km: 400,
+      duration: "5 horas aprox.",
+      intro:
+        "Cubrimos el trayecto de Veracruz hacia CDMX y la zona metropolitana con tarifa preferencial por ser viaje de regreso, ideal para empresas relacionadas con comercio exterior y distribución que necesitan mover mercancía desde el puerto hacia el centro del país.",
+      metaDescription: "Flete de Veracruz a CDMX y zona metropolitana con tarifa preferencial. Unidades de 1 a 30 toneladas. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "acapulco",
+      name: "Acapulco",
+      km: 400,
+      duration: "5 h 30 min aprox.",
+      intro:
+        "Transportamos carga de Acapulco hacia CDMX y la zona metropolitana con tarifa preferencial, disponible para empresas de comercio, turismo y distribución que necesitan enviar mercancía de regreso al centro del país.",
+      metaDescription: "Flete de Acapulco a CDMX y zona metropolitana con tarifa preferencial. Unidades de 1 a 30 toneladas. Cotiza al 55 6185 7646.",
+    },
+  ],
   units: [
     {
       slug: "np300-redilas",

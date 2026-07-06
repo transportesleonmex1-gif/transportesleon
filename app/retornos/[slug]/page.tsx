@@ -12,67 +12,68 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
-function getRoute(slug: string) {
-  return siteConfig.routes.find((r) => r.slug === slug);
+function getRetorno(slug: string) {
+  return siteConfig.retornos.find((r) => r.slug === slug);
 }
 
 export function generateStaticParams() {
-  return siteConfig.routes.map((route) => ({ slug: route.slug }));
+  return siteConfig.retornos.map((retorno) => ({ slug: retorno.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const route = getRoute(slug);
+  const retorno = getRetorno(slug);
 
-  if (!route) {
+  if (!retorno) {
     return { title: "Ruta no encontrada" };
   }
 
-  const title = `Flete CDMX a ${route.name}`;
-  const description = route.metaDescription;
+  const title = `Flete de ${retorno.name} a CDMX y Zona Metropolitana`;
+  const description = retorno.metaDescription;
 
   return {
     title,
     description,
     alternates: {
-      canonical: `/rutas/${route.slug}`,
+      canonical: `/retornos/${retorno.slug}`,
     },
     openGraph: {
       title,
       description,
-      url: `${siteConfig.url}/rutas/${route.slug}`,
+      url: `${siteConfig.url}/retornos/${retorno.slug}`,
       images: [
         {
           url: siteConfig.ogImage,
           width: 1200,
           height: 630,
-          alt: `Flete foráneo de CDMX a ${route.name}`,
+          alt: `Flete de ${retorno.name} a CDMX y zona metropolitana`,
         },
       ],
     },
   };
 }
 
-function RouteJsonLd({ route }: { route: NonNullable<ReturnType<typeof getRoute>> }) {
+function RetornoJsonLd({ retorno }: { retorno: NonNullable<ReturnType<typeof getRetorno>> }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    serviceType: "Flete foráneo de carga",
-    name: `Flete foráneo de CDMX a ${route.name}`,
-    description: route.intro,
+    serviceType: "Flete de retorno de carga",
+    name: `Flete de ${retorno.name} a CDMX y zona metropolitana`,
+    description: retorno.intro,
     provider: {
       "@type": "LocalBusiness",
       name: siteConfig.name,
       telephone: `+52${siteConfig.phone}`,
       url: siteConfig.url,
     },
-    areaServed: {
-      "@type": "City",
-      name: route.name,
-    },
+    areaServed: [
+      { "@type": "City", name: retorno.name },
+      { "@type": "City", name: "Ciudad de México" },
+      { "@type": "State", name: "Estado de México" },
+    ],
     audience: {
       "@type": "Audience",
-      audienceType: "Empresas y particulares con carga foránea",
+      audienceType: "Empresas y particulares con carga hacia CDMX o zona metropolitana",
     },
   };
 
@@ -84,47 +85,51 @@ function RouteJsonLd({ route }: { route: NonNullable<ReturnType<typeof getRoute>
   );
 }
 
-export default async function RoutePage({ params }: Props) {
+export default async function RetornoPage({ params }: Props) {
   const { slug } = await params;
-  const route = getRoute(slug);
+  const retorno = getRetorno(slug);
 
-  if (!route) {
+  if (!retorno) {
     notFound();
   }
 
-  const otherRoutes = siteConfig.routes.filter((r) => r.slug !== route.slug);
-  const waMessage = `Hola, necesito cotizar un flete de CDMX a ${route.name}`;
+  const otherRetornos = siteConfig.retornos.filter((r) => r.slug !== retorno.slug);
+  const waMessage = `Hola, necesito cotizar un flete de ${retorno.name} a CDMX / zona metropolitana`;
 
   return (
     <>
-      <RouteJsonLd route={route} />
+      <RetornoJsonLd retorno={retorno} />
       <Header />
       <main className="pb-16 sm:pb-0">
-        <Breadcrumbs items={[{ label: `Flete a ${route.name}`, href: `/rutas/${route.slug}` }]} />
+        <Breadcrumbs
+          items={[
+            { label: `Flete de ${retorno.name} a CDMX`, href: `/retornos/${retorno.slug}` },
+          ]}
+        />
 
-        {/* Hero de la ruta */}
+        {/* Hero de la ruta de retorno */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-0">
           <div className="flex flex-col justify-center px-[6%] py-10 lg:py-16">
             <div className="inline-flex items-center gap-2 bg-azul-light text-azul text-xs font-semibold uppercase tracking-wide px-3.5 py-1.5 rounded-full mb-5 w-fit">
-              Flete foráneo
+              Flete de retorno · Tarifa preferencial
             </div>
 
-            <h1 className="font-display text-[40px] sm:text-[52px] lg:text-[60px] leading-[0.95] text-gray-900 mb-4">
-              FLETE DE CDMX A <span className="text-rojo">{route.name.toUpperCase()}</span>
+            <h1 className="font-display text-[36px] sm:text-[48px] lg:text-[56px] leading-[0.95] text-gray-900 mb-4">
+              FLETE DE {retorno.name.toUpperCase()} A <span className="text-rojo">CDMX Y ZONA METROPOLITANA</span>
             </h1>
 
             <p className="text-[16px] text-gris max-w-[520px] mb-6 leading-relaxed">
-              {route.intro}
+              {retorno.intro}
             </p>
 
             <div className="flex gap-5 flex-wrap mb-8 text-sm">
               <div className="flex items-center gap-2">
                 <span className="font-bold text-gray-900">📍 Distancia:</span>
-                <span className="text-gris">{route.km} km aproximadamente</span>
+                <span className="text-gris">{retorno.km} km aproximadamente</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="font-bold text-gray-900">⏱️ Tiempo:</span>
-                <span className="text-gris">{route.duration}</span>
+                <span className="text-gris">{retorno.duration}</span>
               </div>
             </div>
 
@@ -147,7 +152,7 @@ export default async function RoutePage({ params }: Props) {
           <div className="relative min-h-[280px] lg:min-h-full overflow-hidden bg-gray-100">
             <Image
               src="/images/hero-np300-ruta.jpg"
-              alt={`Unidad de Transportes León lista para flete a ${route.name}`}
+              alt={`Unidad de Transportes León lista para flete de ${retorno.name} a CDMX`}
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
@@ -156,10 +161,10 @@ export default async function RoutePage({ params }: Props) {
           </div>
         </section>
 
-        {/* Unidades disponibles para esta ruta */}
+        {/* Unidades disponibles */}
         <section className="py-14 px-[6%] bg-gris-claro">
           <h2 className="font-display text-[28px] sm:text-[36px] text-gray-900 leading-none mb-8">
-            UNIDADES DISPONIBLES PARA {route.name.toUpperCase()}
+            UNIDADES DISPONIBLES PARA ESTE TRAYECTO
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {siteConfig.units.map((unit) => (
@@ -170,7 +175,7 @@ export default async function RoutePage({ params }: Props) {
                 <div className="h-[160px] relative overflow-hidden">
                   <Image
                     src={unit.image}
-                    alt={`${unit.name} disponible para flete a ${route.name}`}
+                    alt={`${unit.name} disponible para flete de ${retorno.name} a CDMX`}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover"
@@ -187,10 +192,10 @@ export default async function RoutePage({ params }: Props) {
           </div>
         </section>
 
-        {/* Por qué elegirnos para esta ruta */}
+        {/* Por qué elegirnos */}
         <section className="py-14 px-[6%]">
           <h2 className="font-display text-[28px] sm:text-[36px] text-gray-900 leading-none mb-8">
-            ¿POR QUÉ ELEGIRNOS PARA TU FLETE A {route.name.toUpperCase()}?
+            ¿POR QUÉ ELEGIRNOS PARA TU FLETE DESDE {retorno.name.toUpperCase()}?
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="border border-borde rounded-xl p-5">
@@ -200,7 +205,7 @@ export default async function RoutePage({ params }: Props) {
               </div>
               <p className="text-[13px] text-gris">
                 Desde camionetas NP300 hasta trailer de 53 pies, elegimos la unidad
-                correcta para tu carga rumbo a {route.name}.
+                correcta para tu carga desde {retorno.name}.
               </p>
             </div>
             <div className="border border-borde rounded-xl p-5">
@@ -209,18 +214,18 @@ export default async function RoutePage({ params }: Props) {
                 Carga asegurada y con lona
               </div>
               <p className="text-[13px] text-gris">
-                Protegemos tu mercancía durante todo el trayecto a {route.name} con
-                lona y amarres profesionales.
+                Protegemos tu mercancía durante todo el trayecto de {retorno.name} a
+                CDMX con lona y amarres profesionales.
               </p>
             </div>
             <div className="border border-borde rounded-xl p-5">
-              <div className="text-2xl mb-2">⏰</div>
+              <div className="text-2xl mb-2">💰</div>
               <div className="font-bold text-gray-900 text-[15px] mb-1">
-                Servicio 24 horas
+                Tarifa preferencial
               </div>
               <p className="text-[13px] text-gris">
-                Fletes urgentes a {route.name} disponibles cualquier día de la
-                semana, a cualquier hora.
+                Por tratarse de un viaje de regreso, ofrecemos tarifa preferencial
+                para carga desde {retorno.name} hacia CDMX y zona metropolitana.
               </p>
             </div>
             <div className="border border-borde rounded-xl p-5">
@@ -230,56 +235,56 @@ export default async function RoutePage({ params }: Props) {
               </div>
               <p className="text-[13px] text-gris">
                 Emitimos factura para empresas y personas morales que envían carga
-                a {route.name}.
+                desde {retorno.name}.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Flete de retorno relacionado */}
+        {/* Ruta de ida relacionada */}
         {(() => {
-          const retorno = siteConfig.retornos.find(
+          const route = siteConfig.routes.find(
             (r) =>
-              route.name.toLowerCase().includes(r.name.toLowerCase()) ||
-              r.name.toLowerCase().includes(route.name.toLowerCase())
+              r.name.toLowerCase().includes(retorno.name.toLowerCase()) ||
+              retorno.name.toLowerCase().includes(r.name.toLowerCase())
           );
-          if (!retorno) return null;
+          if (!route) return null;
           return (
             <section className="py-8 px-[6%]">
               <Link
-                href={`/retornos/${retorno.slug}`}
+                href={`/rutas/${route.slug}`}
                 className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-azul-light border border-azul rounded-lg px-6 py-5 hover:shadow-md transition-all"
               >
                 <div>
                   <div className="text-[15px] font-semibold text-azul">
-                    🔁 ¿Tienes carga en {retorno.name} que necesitas enviar a CDMX?
+                    🔁 ¿También necesitas enviar carga a {route.name}?
                   </div>
                   <div className="text-xs text-gris mt-1">
-                    También cubrimos el trayecto de regreso hacia la zona metropolitana, con tarifa preferencial
+                    Consulta nuestra ruta de ida desde CDMX
                   </div>
                 </div>
                 <span className="text-azul font-bold text-sm whitespace-nowrap">
-                  Ver flete de {retorno.name} a CDMX ›
+                  Ver flete de CDMX a {route.name} ›
                 </span>
               </Link>
             </section>
           );
         })()}
 
-        {/* Otras rutas */}
+        {/* Otras rutas de retorno */}
         <section className="py-14 px-[6%] bg-gris-claro">
           <h2 className="font-display text-[28px] sm:text-[36px] text-gray-900 leading-none mb-8">
-            OTRAS RUTAS QUE CUBRIMOS
+            OTRAS RUTAS DE RETORNO
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
-            {otherRoutes.map((r) => (
+            {otherRetornos.map((r) => (
               <Link
                 key={r.slug}
-                href={`/rutas/${r.slug}`}
+                href={`/retornos/${r.slug}`}
                 className="bg-white border border-borde rounded-lg px-4 py-3.5 flex justify-between items-center hover:border-rojo hover:shadow-md transition-all"
               >
                 <span className="text-sm font-semibold text-gray-900">
-                  → {r.name}
+                  → {r.name} a CDMX
                 </span>
                 <span className="text-rojo text-lg font-bold">›</span>
               </Link>
