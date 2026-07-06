@@ -410,13 +410,22 @@ export const siteConfig = {
       image: "/images/np300-caja-seca.jpg",
     },
     {
-      slug: "torton-cama-plana",
-      name: "Torton Cama Plana",
+      slug: "torton-caja-seca",
+      name: "Torton Caja Seca",
       type: "Torton",
       capacity: "Hasta 10 toneladas",
       description:
-        "Camión torton de plataforma plana para maquinaria, equipo industrial y carga pesada que requiere mayor capacidad de tonelaje.",
-      image: "/images/torton-cama-plana.jpg",
+        "Camión torton con caja seca cerrada, nuestra unidad de mayor tamaño en caja rígida, ideal para carga voluminosa y de mayor volumen que requiere protección total contra clima y polvo.",
+      image: "/images/torton-caja-seca.jpg",
+    },
+    {
+      slug: "f350-caja-seca",
+      name: "Ford F350 Caja Seca",
+      type: "Camioneta",
+      capacity: "Hasta 3.5 toneladas",
+      description:
+        "Camioneta Ford F350 con caja seca cerrada, ideal para carga mediana que requiere protección total contra clima y polvo durante el traslado.",
+      image: "/images/f350-caja-seca.jpg",
     },
     {
       slug: "camion-caja-seca",

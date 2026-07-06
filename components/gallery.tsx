@@ -4,7 +4,7 @@ const galleryImages = [
   { src: "/images/np300-plataforma-vacia.jpg", alt: "Plataforma de redilas vacía lista para carga", tall: true },
   { src: "/images/carga-agricola.jpg", alt: "Carga agrícola transportada por Transportes León" },
   { src: "/images/carga-industrial.jpg", alt: "Carga industrial asegurada para flete foráneo" },
-  { src: "/images/torton-cama-plana.jpg", alt: "Torton cama plana de Transportes León" },
+  { src: "/images/torton-caja-seca.jpg", alt: "Torton caja seca de Transportes León" },
   { src: "/images/trailer-53-pies.jpg", alt: "Trailer caja seca 53 pies de Transportes León" },
 ];
 
