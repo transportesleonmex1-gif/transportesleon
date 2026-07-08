@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/header";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { ContactButtons } from "@/components/contact-buttons";
 import { FinalCta, Footer } from "@/components/cta-footer";
 import { MobileCtaBar } from "@/components/mobile-cta-bar";
 import { siteConfig } from "@/lib/site-config";
@@ -124,20 +125,7 @@ export default async function StatePage({ params }: Props) {
               </div>
             </div>
 
-            <div className="flex gap-3 flex-wrap">
-              <a
-                href={`tel:${siteConfig.phone}`}
-                className="inline-flex items-center gap-2.5 bg-rojo text-white text-[15px] font-semibold px-7 py-4 rounded-md hover:bg-rojo-dark transition-colors"
-              >
-                Llamar y cotizar
-              </a>
-              <a
-                href={`https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(waMessage)}`}
-                className="inline-flex items-center gap-2.5 bg-[#25D366] text-white text-[15px] font-semibold px-7 py-4 rounded-md hover:opacity-90 transition-opacity"
-              >
-                Cotizar por WhatsApp
-              </a>
-            </div>
+            <ContactButtons waMessage={waMessage} location="estado_hero" />
           </div>
 
           <div className="relative min-h-[280px] lg:min-h-full overflow-hidden bg-gray-100">

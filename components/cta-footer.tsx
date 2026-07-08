@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
+import { trackContact } from "@/lib/analytics";
 
 export function FinalCta() {
   return (
@@ -14,12 +17,14 @@ export function FinalCta() {
       <div className="flex gap-3.5 justify-center flex-wrap">
         <a
           href={`tel:${siteConfig.phone}`}
+          onClick={() => trackContact("call", "final_cta")}
           className="inline-flex items-center gap-2.5 bg-white text-rojo text-[15px] font-bold px-7.5 py-4 rounded-md hover:-translate-y-0.5 transition-transform"
         >
           {siteConfig.phoneDisplay} — Llamar ahora
         </a>
         <a
           href={`https://wa.me/${siteConfig.whatsapp}?text=Hola,%20necesito%20cotizar%20un%20flete%20for%C3%A1neo`}
+          onClick={() => trackContact("whatsapp", "final_cta")}
           className="inline-flex items-center gap-2.5 bg-[#25D366] text-white text-[15px] font-bold px-7.5 py-4 rounded-md hover:opacity-90 transition-opacity"
         >
           WhatsApp directo
@@ -103,7 +108,7 @@ export function Footer() {
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-2">
           <span>© {new Date().getFullYear()} {siteConfig.name}</span>
           <div className="flex gap-5">
-            <a href={`tel:${siteConfig.phone}`} className="hover:text-white transition-colors">
+            <a href={`tel:${siteConfig.phone}`} onClick={() => trackContact("call", "footer")} className="hover:text-white transition-colors">
               {siteConfig.phoneDisplay}
             </a>
             <a href={siteConfig.social.instagram} className="hover:text-white transition-colors">

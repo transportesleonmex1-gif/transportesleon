@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
+import { trackContact } from "@/lib/analytics";
 
 const heroImages = siteConfig.units.map((unit) => ({
   src: unit.image,
@@ -39,12 +40,14 @@ export function Hero() {
         <div className="flex gap-3 flex-wrap mb-9">
           <a
             href={`tel:${siteConfig.phone}`}
+            onClick={() => trackContact("call", "hero")}
             className="inline-flex items-center gap-2.5 bg-rojo text-white text-[15px] font-semibold px-7 py-4 rounded-md hover:bg-rojo-dark hover:-translate-y-0.5 transition-all"
           >
             Llamar y cotizar ahora
           </a>
           <a
             href={`https://wa.me/${siteConfig.whatsapp}?text=Hola,%20necesito%20un%20flete%20for%C3%A1neo`}
+            onClick={() => trackContact("whatsapp", "hero")}
             className="inline-flex items-center gap-2.5 bg-[#25D366] text-white text-[15px] font-semibold px-7 py-4 rounded-md hover:opacity-90 transition-opacity"
           >
             WhatsApp

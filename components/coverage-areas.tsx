@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
+import { trackContact } from "@/lib/analytics";
 
 export function CoverageAreas() {
   return (
@@ -57,7 +60,7 @@ export function CoverageAreas() {
             </div>
             <div className="text-xs text-gris mt-1">
               Llegamos a cualquier punto del país — cotiza tu ruta al{" "}
-              <a href={`tel:${siteConfig.phone}`} className="font-bold text-rojo">
+              <a href={`tel:${siteConfig.phone}`} onClick={() => trackContact("call", "coverage_areas")} className="font-bold text-rojo">
                 {siteConfig.phoneDisplay}
               </a>
             </div>
