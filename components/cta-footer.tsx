@@ -37,7 +37,19 @@ export function FinalCta() {
 export function Footer() {
   return (
     <footer className="bg-gray-900 text-white/60">
-      <div className="px-[6%] py-10 grid grid-cols-2 sm:grid-cols-5 gap-8 text-xs border-b border-white/10 max-w-7xl mx-auto">
+      <div className="px-[6%] py-10 grid grid-cols-2 sm:grid-cols-6 gap-8 text-xs border-b border-white/10 max-w-7xl mx-auto">
+        <div>
+          <div className="text-white font-semibold mb-3 text-[13px]">Servicios</div>
+          <ul className="space-y-2">
+            {siteConfig.servicios.map((servicio) => (
+              <li key={servicio.slug}>
+                <Link href={`/servicios/${servicio.slug}`} className="hover:text-white transition-colors">
+                  {servicio.metaTitle}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
         <div>
           <div className="text-white font-semibold mb-3 text-[13px]">Ciudades</div>
           <ul className="space-y-2">

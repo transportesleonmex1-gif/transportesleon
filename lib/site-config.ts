@@ -344,6 +344,147 @@ export const siteConfig = {
       metaDescription: "Transporte de carga foráneo a Quintana Roo desde CDMX. Atendemos los sectores de Turismo y Comercio. Servicio 24 horas, 1 a 30 toneladas.",
     },
   ],
+  servicios: [
+    {
+      slug: "renta-con-chofer",
+      title: "Renta de Camioneta de Carga con Chofer por Día, Semana o Mes",
+      metaTitle: "Renta con Chofer por Día, Semana o Mes",
+      badge: "Servicio recurrente",
+      metaDescription: "Renta de camioneta de carga con chofer por día, semana o mes en CDMX y Edomex. Flotilla de 1 a 30 toneladas. Cotiza al 55 6185 7646.",
+      intro:
+        "Si necesitas una unidad de carga de forma continua y no solo para un viaje único, ofrecemos renta de camioneta con chofer por día, semana o mes. Ideal para rutas de reparto diario, refuerzo temporal de flotilla, obra en construcción o cualquier operación que requiera transporte de carga de manera recurrente.",
+      sections: [
+        {
+          heading: "¿Cómo funciona?",
+          body: "Acuerdas contigo el periodo (día, semana o mes), el tipo de unidad según tu volumen de carga, y la unidad llega con chofer incluido. Tú defines las rutas y horarios de operación dentro del periodo contratado.",
+        },
+        {
+          heading: "¿Para quién es este servicio?",
+          body: "Empresas con rutas de distribución diaria, negocios que necesitan refuerzo temporal de flotilla en temporadas altas, constructoras que requieren transporte de materiales por proyecto, y cualquier operación que prefiera no invertir en flotilla propia.",
+        },
+        {
+          heading: "Unidades disponibles para renta con chofer",
+          body: "Desde camionetas NP300 hasta trailer de 53 pies, según el volumen y tipo de carga que manejes de forma recurrente.",
+        },
+      ],
+    },
+    {
+      slug: "flete-urgente",
+      title: "Flete Urgente CDMX — Servicio Express 24 Horas",
+      metaTitle: "Flete Urgente CDMX 24 Horas",
+      badge: "Disponible ahora",
+      metaDescription: "Flete urgente en CDMX y zona metropolitana, servicio 24 horas. Salida el mismo día. Unidades de 1 a 30 toneladas. Cotiza al 55 6185 7646.",
+      intro:
+        "Cuando la carga no puede esperar, ofrecemos servicio de flete urgente las 24 horas del día, los 7 días de la semana. Salimos el mismo día que cotizas, con unidades disponibles para carga local y foránea desde CDMX y zona metropolitana.",
+      sections: [
+        {
+          heading: "¿Qué tan rápido pueden salir?",
+          body: "Al cotizar por llamada o WhatsApp, confirmamos disponibilidad de unidad de inmediato. La salida depende de la unidad disponible en ese momento y tu ubicación, pero priorizamos los fletes urgentes sobre la programación regular.",
+        },
+        {
+          heading: "¿Qué tipo de carga urgente atendemos?",
+          body: "Carga comercial, industrial, refacciones, mercancía perecedera con manejo adecuado, y cualquier envío que requiera salida inmediata local o foránea.",
+        },
+        {
+          heading: "Cobertura para fletes urgentes",
+          body: "Local en CDMX, Naucalpan, Tlalnepantla, Atizapán, Tepotzotlán y Cuautitlán Izcalli, y foráneo urgente a cualquier estado de la República.",
+        },
+      ],
+    },
+    {
+      slug: "cuanto-cuesta-un-flete",
+      title: "¿Cuánto Cuesta un Flete? Factores que Afectan el Precio",
+      metaTitle: "¿Cuánto Cuesta un Flete?",
+      badge: "Guía informativa",
+      metaDescription: "¿Cuánto cuesta un flete en México? Conoce los factores que afectan el precio: distancia, tonelaje, tipo de unidad y urgencia. Cotiza gratis.",
+      intro:
+        "El costo de un flete varía según varios factores, y no hay una tarifa única que aplique a todos los casos. Aquí te explicamos qué determina el precio final, para que sepas qué información tener a la mano al momento de cotizar.",
+      sections: [
+        {
+          heading: "Distancia y ruta",
+          body: "El kilometraje entre origen y destino es el factor más directo. Rutas con más tráfico, casetas o terracería también pueden influir en el tiempo y costo del servicio.",
+        },
+        {
+          heading: "Tonelaje y volumen de carga",
+          body: "No es lo mismo mover 500 kilos que 10 toneladas. El tipo de unidad necesaria (NP300, camión, torton o trailer) depende directamente de cuánto y qué tan voluminosa es tu carga.",
+        },
+        {
+          heading: "Tipo de unidad requerida",
+          body: "Una camioneta con redilas, una caja seca cerrada, o un trailer de 53 pies tienen costos operativos distintos, lo cual se refleja en la tarifa.",
+        },
+        {
+          heading: "Urgencia del servicio",
+          body: "Un flete programado con anticipación normalmente cuesta menos que uno urgente que requiere salida inmediata.",
+        },
+        {
+          heading: "¿Cómo obtengo un precio exacto?",
+          body: "Contáctanos por llamada o WhatsApp con origen, destino, tipo de carga y volumen aproximado, y te damos una cotización exacta sin compromiso.",
+        },
+      ],
+    },
+    {
+      slug: "tipos-de-camiones-de-carga",
+      title: "Tipos de Camiones de Carga: Cuál Elegir Según tu Mercancía",
+      metaTitle: "Tipos de Camiones de Carga",
+      badge: "Guía informativa",
+      metaDescription: "Guía de tipos de camiones de carga: NP300, camioneta F350, camión caja seca, torton y trailer 53 pies. Compara capacidades y usos.",
+      intro:
+        "Elegir la unidad correcta depende del volumen, peso y tipo de mercancía que necesitas transportar. Aquí te explicamos las diferencias entre cada tipo de unidad de nuestra flotilla, para que sepas cuál es la ideal para tu carga.",
+      sections: [
+        {
+          heading: "NP300 Redilas — hasta 1 tonelada",
+          body: "Ideal para carga ligera, artículos individuales, mercancía comercial de bajo volumen y entregas rápidas locales.",
+        },
+        {
+          heading: "NP300 Caja Seca — hasta 1 tonelada",
+          body: "Igual capacidad que la de redilas, pero con caja cerrada para mercancía que requiere protección contra clima y polvo.",
+        },
+        {
+          heading: "Ford F350 Caja Seca — hasta 3.5 toneladas",
+          body: "Un paso arriba en capacidad, ideal para carga mediana que ya no cabe en una camioneta pero no requiere un camión completo.",
+        },
+        {
+          heading: "Camión Caja Seca — hasta 10 toneladas",
+          body: "Para mercancía comercial e industrial de mayor volumen que necesita protección total durante el trayecto.",
+        },
+        {
+          heading: "Torton Caja Seca — hasta 10 toneladas",
+          body: "Nuestra unidad de mayor tamaño en caja rígida, ideal para carga voluminosa que requiere más espacio interior.",
+        },
+        {
+          heading: "Trailer 53 Pies — hasta 30 toneladas",
+          body: "Para carga completa (FTL) de gran volumen y trayectos largos, ideal para distribución industrial y comercial a gran escala.",
+        },
+      ],
+    },
+    {
+      slug: "transporte-de-carga-empresas",
+      title: "Transporte de Carga para Empresas",
+      metaTitle: "Transporte de Carga para Empresas",
+      badge: "Servicio B2B",
+      metaDescription: "Transporte de carga para empresas en CDMX y todo México. Facturación, flotilla de 1 a 30 toneladas, cobertura nacional. Cotiza tu contrato.",
+      intro:
+        "Ofrecemos transporte de carga para empresas que necesitan un proveedor logístico confiable, ya sea para envíos ocasionales o como parte de su operación recurrente de distribución. Facturamos para personas morales y físicas con actividad empresarial.",
+      sections: [
+        {
+          heading: "Facturación para tu empresa",
+          body: "Emitimos factura para que puedas deducir el gasto de transporte dentro de tu operación, sin trámites complicados.",
+        },
+        {
+          heading: "Flotilla según tu volumen de operación",
+          body: "Desde camionetas para entregas pequeñas hasta trailer de 53 pies para carga completa, ajustamos la unidad a las necesidades reales de tu empresa.",
+        },
+        {
+          heading: "Cobertura nacional",
+          body: "Ya sea que distribuyas dentro de la zona metropolitana o necesites enviar mercancía a otros estados, cubrimos rutas locales y foráneas en toda la República.",
+        },
+        {
+          heading: "Atención directa",
+          body: "Cotiza y coordina tus envíos por llamada o WhatsApp, sin intermediarios ni plataformas complicadas.",
+        },
+      ],
+    },
+  ],
   retornos: [
     {
       slug: "puebla",

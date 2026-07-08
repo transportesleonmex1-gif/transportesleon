@@ -6,6 +6,7 @@ import { UnitsGrid } from "@/components/units-grid";
 import { Gallery } from "@/components/gallery";
 import { CoverageAreas } from "@/components/coverage-areas";
 import { CargoTypes } from "@/components/cargo-types";
+import { ServicesSection } from "@/components/services-section";
 import { FinalCta, Footer } from "@/components/cta-footer";
 import { MobileCtaBar } from "@/components/mobile-cta-bar";
 import { siteConfig } from "@/lib/site-config";
@@ -27,6 +28,7 @@ export default function HomePage() {
       <main className="pb-16 sm:pb-0">
         <Hero />
         <StatsBar />
+        <ServicesSection />
         <UnitsGrid />
         <CargoTypes />
         <CoverageAreas />
