@@ -1,3 +1,23 @@
+interface CityItem {
+  slug: string;
+  name: string;
+  region: string;
+  metaTitle?: string;
+  intro: string;
+  highlight: string;
+  metaDescription: string;
+}
+
+interface RouteItem {
+  slug: string;
+  name: string;
+  km: number;
+  duration: string;
+  metaTitle?: string;
+  intro: string;
+  metaDescription: string;
+}
+
 export const siteConfig = {
   name: "Transportes León",
   shortName: "Transportes León",
@@ -53,6 +73,7 @@ export const siteConfig = {
       slug: "tepotzotlan",
       name: "Tepotzotlán",
       region: "Estado de México",
+      metaTitle: "Fletes en Tepotzotlán 24h | Cotiza Hoy",
       intro:
         "Tepotzotlán es punto estratégico de salida hacia el Bajío y el norte del país gracias a su cercanía con la autopista México-Querétaro. Damos servicio a parques industriales, bodegas logísticas y zona centro del municipio.",
       highlight: "Punto estratégico de salida hacia el Bajío y el norte.",
@@ -76,7 +97,7 @@ export const siteConfig = {
       highlight: "Cobertura en todas las alcaldías y origen principal de rutas foráneas.",
       metaDescription: "Fletes locales y foráneos en Ciudad de México, CDMX. Cotiza al 55 6185 7646, servicio 24 horas, 1 a 30 toneladas.",
     },
-  ],
+  ] as CityItem[],
   routes: [
     {
       slug: "queretaro",
@@ -137,11 +158,12 @@ export const siteConfig = {
       name: "Acapulco",
       km: 400,
       duration: "5 h 30 min aprox.",
+      metaTitle: "Flete de Naucalpan y CDMX a Acapulco",
       intro:
         "Servicio de flete foráneo desde CDMX, Naucalpan y zona metro hacia Acapulco, cubriendo zona centro, costera y zona dorada. Ideal para traslado de mercancía, equipo comercial, materiales de construcción y carga industrial que necesita llegar a Acapulco con operador de confianza.",
-      metaDescription: "Flete foráneo de CDMX a Acapulco (400 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
+      metaDescription: "Flete foráneo de Naucalpan y CDMX a Acapulco (400 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
     },
-  ],
+  ] as RouteItem[],
   states: [
     {
       slug: "jalisco",

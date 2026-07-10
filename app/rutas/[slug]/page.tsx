@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: "Ruta no encontrada" };
   }
 
-  const title = `Flete CDMX a ${route.name}`;
+  const title = route.metaTitle ?? `Flete CDMX a ${route.name}`;
   const description = route.metaDescription;
 
   return {

@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: "Ciudad no encontrada" };
   }
 
-  const title = `Fletes en ${city.name}`;
+  const title = city.metaTitle ?? `Fletes en ${city.name}`;
   const description = city.metaDescription;
 
   return {
