@@ -4,7 +4,7 @@ import { siteConfig } from "@/lib/site-config";
 // sitemap.xml como la ruta de envío a IndexNow, para no mantener la lista
 // de páginas en dos lugares distintos.
 export function getAllUrls(): string[] {
-  const urls = [siteConfig.url];
+  const urls: string[] = [siteConfig.url];
 
   for (const servicio of siteConfig.servicios) {
     urls.push(`${siteConfig.url}/servicios/${servicio.slug}`);
