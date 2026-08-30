@@ -26,6 +26,7 @@ export const siteConfig = {
   domain: "transportesleonmx.com",
   ogImage: "/images/og-cover.jpg",
   ga4MeasurementId: "G-G0BF5NYZ41",
+  indexNowKey: "7ad618834f2785d8f5e4989f2029924b",
   phone: "5561857646",
   phoneDisplay: "55 6185 7646",
   whatsapp: "525561857646",
