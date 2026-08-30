@@ -122,8 +122,9 @@ export const siteConfig = {
       name: "Toluca",
       km: 65,
       duration: "1 hora aprox.",
+      metaTitle: "Flete CDMX-Edomex a Toluca | Mismo Día",
       intro:
-        "Ruta corta y frecuente desde CDMX y Naucalpan hacia Toluca, perfecta para entregas same-day de materiales y mercancía.",
+        "Ruta corta y frecuente desde CDMX, Naucalpan y cualquier punto del Estado de México hacia Toluca, perfecta para entregas same-day de materiales y mercancía.",
       metaDescription: "Flete foráneo de CDMX a Toluca (65 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
     },
     {
@@ -140,8 +141,9 @@ export const siteConfig = {
       name: "Cuernavaca",
       km: 85,
       duration: "1 h 10 min aprox.",
+      metaTitle: "Flete CDMX-Edomex a Cuernavaca, Morelos",
       intro:
-        "Transporte de carga desde CDMX hacia Cuernavaca y zona metropolitana de Morelos.",
+        "Transporte de carga desde CDMX, Naucalpan y el Estado de México hacia Cuernavaca y zona metropolitana de Morelos.",
       metaDescription: "Flete foráneo de CDMX a Cuernavaca (85 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
     },
     {
@@ -158,10 +160,50 @@ export const siteConfig = {
       name: "Acapulco",
       km: 400,
       duration: "5 h 30 min aprox.",
-      metaTitle: "Flete de Naucalpan y CDMX a Acapulco",
+      metaTitle: "Flete a Acapulco desde CDMX | 24h",
       intro:
-        "Servicio de flete foráneo desde CDMX, Naucalpan y zona metro hacia Acapulco, cubriendo zona centro, costera y zona dorada. Ideal para traslado de mercancía, equipo comercial, materiales de construcción y carga industrial que necesita llegar a Acapulco con operador de confianza.",
+        "Servicio de flete foráneo desde CDMX, Naucalpan y zona metro hacia Acapulco, con cobertura puntual en Acapulco Centro, Costera Miguel Alemán, Zona Dorada, Diamante y Puerto Marqués. Ideal para traslado de mercancía, equipo comercial, materiales de construcción y carga industrial que necesita llegar a Acapulco con operador de confianza y horario flexible las 24 horas.",
       metaDescription: "Flete foráneo de Naucalpan y CDMX a Acapulco (400 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "guadalajara",
+      name: "Guadalajara",
+      km: 540,
+      duration: "6 h 30 min aprox.",
+      metaTitle: "Flete CDMX a Guadalajara",
+      intro:
+        "Flete foráneo de larga distancia desde CDMX y Naucalpan hacia Guadalajara y su zona metropolitana, ideal para carga industrial, comercial y tecnológica que necesita conexión con el occidente del país.",
+      metaDescription: "Flete foráneo de CDMX a Guadalajara (540 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "villahermosa",
+      name: "Villahermosa",
+      km: 860,
+      duration: "10 h aprox.",
+      metaTitle: "Flete CDMX a Villahermosa",
+      intro:
+        "Servicio de flete foráneo de larga distancia desde CDMX y Naucalpan hacia Villahermosa, Tabasco, ideal para carga comercial e industrial que necesita llegar al sureste del país.",
+      metaDescription: "Flete foráneo de CDMX a Villahermosa (860 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "cancun",
+      name: "Cancún",
+      km: 1650,
+      duration: "19 h aprox.",
+      metaTitle: "Flete CDMX a Cancún",
+      intro:
+        "Flete foráneo de muy larga distancia desde CDMX y Naucalpan hacia Cancún, ideal para carga comercial, hotelera y de distribución que necesita llegar a la zona turística del Caribe mexicano.",
+      metaDescription: "Flete foráneo de CDMX a Cancún (1,650 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "monterrey",
+      name: "Monterrey",
+      km: 900,
+      duration: "10 h 30 min aprox.",
+      metaTitle: "Flete CDMX a Monterrey",
+      intro:
+        "Servicio de flete foráneo de larga distancia desde CDMX y Naucalpan hacia Monterrey y su área metropolitana, con unidades preparadas para viajes largos, carga asegurada y facturación para empresas del corredor industrial regiomontano.",
+      metaDescription: "Flete foráneo de CDMX a Monterrey (900 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
     },
   ] as RouteItem[],
   states: [
