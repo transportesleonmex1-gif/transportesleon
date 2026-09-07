@@ -48,6 +48,11 @@ export function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link href="/queretaro" className="hover:text-white transition-colors">
+                Fletes desde Querétaro
+              </Link>
+            </li>
           </ul>
         </div>
         <div>

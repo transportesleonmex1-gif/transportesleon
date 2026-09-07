@@ -14,6 +14,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
+  const desdeQueretaroPages: MetadataRoute.Sitemap = siteConfig.desdeQueretaro.map((d) => ({
+    url: `${siteConfig.url}/queretaro/${d.slug}`,
+    lastModified: CONTENT_LAST_MODIFIED,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
   const routePages: MetadataRoute.Sitemap = siteConfig.routes.map((route) => ({
     url: `${siteConfig.url}/rutas/${route.slug}`,
     lastModified: CONTENT_LAST_MODIFIED,
@@ -51,6 +58,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...servicioPages,
     ...routePages,
+    {
+      url: `${siteConfig.url}/queretaro`,
+      lastModified: CONTENT_LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    ...desdeQueretaroPages,
     ...retornoPages,
     ...cityPages,
     ...statePages,

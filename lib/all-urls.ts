@@ -9,6 +9,10 @@ export function getAllUrls(): string[] {
   for (const servicio of siteConfig.servicios) {
     urls.push(`${siteConfig.url}/servicios/${servicio.slug}`);
   }
+  urls.push(`${siteConfig.url}/queretaro`);
+  for (const d of siteConfig.desdeQueretaro) {
+    urls.push(`${siteConfig.url}/queretaro/${d.slug}`);
+  }
   for (const route of siteConfig.routes) {
     urls.push(`${siteConfig.url}/rutas/${route.slug}`);
   }

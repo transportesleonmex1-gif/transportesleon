@@ -497,7 +497,7 @@ export const siteConfig = {
         "Elegir la unidad correcta depende del volumen, peso y tipo de mercancía que necesitas transportar. Aquí te explicamos las diferencias entre cada tipo de unidad de nuestra flotilla, para que sepas cuál es la ideal para tu carga.",
       sections: [
         {
-          heading: "NP300 Redilas — hasta 1 tonelada",
+          heading: "NP300 Redilas — hasta 1.3 toneladas",
           body: "Ideal para carga ligera, artículos individuales, mercancía comercial de bajo volumen y entregas rápidas locales.",
         },
         {
@@ -548,6 +548,158 @@ export const siteConfig = {
           body: "Cotiza y coordina tus envíos por llamada o WhatsApp, sin intermediarios ni plataformas complicadas.",
         },
       ],
+    },
+  ],
+  desdeQueretaro: [
+    {
+      slug: "leon",
+      name: "León",
+      km: 115,
+      duration: "1 h 30 min aprox.",
+      metaTitle: "Flete Querétaro a León",
+      intro:
+        "León es uno de los destinos más frecuentes desde Querétaro por su cercanía y fuerte actividad en calzado, curtiduría y manufactura automotriz.",
+      metaDescription: "Flete foráneo de Querétaro a León (115 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "san-luis-potosi",
+      name: "San Luis Potosí",
+      km: 200,
+      duration: "2 h 30 min aprox.",
+      metaTitle: "Flete Querétaro a San Luis Potosí",
+      intro:
+        "San Luis Potosí es un hub logístico clave del centro-norte del país, con fuerte actividad industrial y de manufactura conectada directo desde Querétaro.",
+      metaDescription: "Flete foráneo de Querétaro a San Luis Potosí (200 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "celaya",
+      name: "Celaya",
+      km: 90,
+      duration: "1 hora aprox.",
+      metaTitle: "Flete Querétaro a Celaya",
+      intro:
+        "Celaya está a un paso de Querétaro, dentro del mismo corredor industrial del Bajío, ideal para carga comercial e industrial de trayecto corto.",
+      metaDescription: "Flete foráneo de Querétaro a Celaya (90 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "guadalajara",
+      name: "Guadalajara",
+      km: 330,
+      duration: "3 h 45 min aprox.",
+      metaTitle: "Flete Querétaro a Guadalajara",
+      intro:
+        "Guadalajara y su zona metropolitana son destino de alto valor comercial y tecnológico, con salida directa desde Querétaro sin necesidad de pasar por CDMX.",
+      metaDescription: "Flete foráneo de Querétaro a Guadalajara (330 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "aguascalientes",
+      name: "Aguascalientes",
+      km: 230,
+      duration: "2 h 30 min aprox.",
+      metaTitle: "Flete Querétaro a Aguascalientes",
+      intro:
+        "Aguascalientes forma parte del corredor automotriz del centro del país, con conexión directa y rápida desde Querétaro.",
+      metaDescription: "Flete foráneo de Querétaro a Aguascalientes (230 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "puebla",
+      name: "Puebla",
+      km: 310,
+      duration: "3 h 30 min aprox.",
+      metaTitle: "Flete Querétaro a Puebla",
+      intro:
+        "Flete foráneo desde Querétaro hacia Puebla capital y su zona industrial, ideal para carga comercial que conecta el Bajío con el centro-sur del país.",
+      metaDescription: "Flete foráneo de Querétaro a Puebla (310 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "cuernavaca",
+      name: "Cuernavaca",
+      km: 250,
+      duration: "2 h 45 min aprox.",
+      metaTitle: "Flete Querétaro a Cuernavaca",
+      intro:
+        "Transportamos carga desde Querétaro hacia Cuernavaca y la zona metropolitana de Morelos, evitando el cruce innecesario por la Ciudad de México.",
+      metaDescription: "Flete foráneo de Querétaro a Cuernavaca (250 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "veracruz",
+      name: "Veracruz",
+      km: 470,
+      duration: "5 h 30 min aprox.",
+      metaTitle: "Flete Querétaro a Veracruz",
+      intro:
+        "Servicio de carga desde Querétaro hacia el puerto de Veracruz, ideal para mercancía relacionada con comercio exterior y distribución hacia el Golfo de México.",
+      metaDescription: "Flete foráneo de Querétaro a Veracruz (470 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "oaxaca",
+      name: "Oaxaca",
+      km: 600,
+      duration: "7 horas aprox.",
+      metaTitle: "Flete Querétaro a Oaxaca",
+      intro:
+        "Flete foráneo de larga distancia desde Querétaro hacia Oaxaca, con unidades preparadas para viajes largos y carga asegurada durante todo el trayecto.",
+      metaDescription: "Flete foráneo de Querétaro a Oaxaca (600 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "acapulco",
+      name: "Acapulco",
+      km: 580,
+      duration: "6 h 30 min aprox.",
+      metaTitle: "Flete Querétaro a Acapulco",
+      intro:
+        "Transportamos carga desde Querétaro hacia Acapulco y la zona costera de Guerrero, ideal para mercancía comercial, hotelera y de distribución.",
+      metaDescription: "Flete foráneo de Querétaro a Acapulco (580 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "monterrey",
+      name: "Monterrey",
+      km: 540,
+      duration: "5 h 30 min aprox.",
+      metaTitle: "Flete Querétaro a Monterrey",
+      intro:
+        "Flete foráneo desde Querétaro hacia Monterrey y su corredor industrial, con unidades preparadas para viajes largos y carga asegurada.",
+      metaDescription: "Flete foráneo de Querétaro a Monterrey (540 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "saltillo",
+      name: "Saltillo",
+      km: 480,
+      duration: "5 horas aprox.",
+      metaTitle: "Flete Querétaro a Saltillo",
+      intro:
+        "Servicio de carga desde Querétaro hacia Saltillo y su corredor industrial automotriz, ideal para mercancía comercial e industrial de largo trayecto.",
+      metaDescription: "Flete foráneo de Querétaro a Saltillo (480 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "torreon",
+      name: "Torreón",
+      km: 560,
+      duration: "6 horas aprox.",
+      metaTitle: "Flete Querétaro a Torreón",
+      intro:
+        "Transportamos carga desde Querétaro hacia Torreón y La Laguna, con unidades preparadas para viajes largos hacia el norte del país.",
+      metaDescription: "Flete foráneo de Querétaro a Torreón (560 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "tampico",
+      name: "Tampico",
+      km: 480,
+      duration: "5 h 30 min aprox.",
+      metaTitle: "Flete Querétaro a Tampico",
+      intro:
+        "Flete foráneo desde Querétaro hacia Tampico, ideal para mercancía relacionada con comercio exterior y distribución hacia el noreste del Golfo de México.",
+      metaDescription: "Flete foráneo de Querétaro a Tampico (480 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "chihuahua",
+      name: "Chihuahua",
+      km: 980,
+      duration: "10 h 30 min aprox.",
+      metaTitle: "Flete Querétaro a Chihuahua",
+      intro:
+        "Servicio de flete foráneo de muy larga distancia desde Querétaro hacia Chihuahua, pensado para empresas con necesidad de distribución hacia el norte del país.",
+      metaDescription: "Flete foráneo de Querétaro a Chihuahua (980 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
     },
   ],
   retornos: [

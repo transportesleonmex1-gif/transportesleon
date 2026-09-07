@@ -259,6 +259,28 @@ export default async function RetornoPage({ params }: Props) {
           );
         })()}
 
+        {/* Querétaro como origen */}
+        {retorno.slug === "queretaro" && (
+          <section className="py-8 px-[6%]">
+            <Link
+              href="/queretaro"
+              className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-azul-light border border-azul rounded-lg px-6 py-5 hover:shadow-md transition-all"
+            >
+              <div>
+                <div className="text-[15px] font-semibold text-azul">
+                  📍 ¿Necesitas enviar carga desde Querétaro a otro estado?
+                </div>
+                <div className="text-xs text-gris mt-1">
+                  También salimos directo desde Querétaro hacia el Bajío, sur y norte del país
+                </div>
+              </div>
+              <span className="text-azul font-bold text-sm whitespace-nowrap">
+                Ver fletes desde Querétaro ›
+              </span>
+            </Link>
+          </section>
+        )}
+
         {/* Otras rutas de retorno */}
         <section className="py-14 px-[6%] bg-gris-claro">
           <h2 className="font-display text-[28px] sm:text-[36px] text-gray-900 leading-none mb-8">
