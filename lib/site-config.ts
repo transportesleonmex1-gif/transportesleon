@@ -482,6 +482,10 @@ export const siteConfig = {
           body: "Un flete programado con anticipación normalmente cuesta menos que uno urgente que requiere salida inmediata.",
         },
         {
+          heading: "¿Por qué cuesta más que un envío de paquetería?",
+          body: "Nuestro servicio es de carga única y exclusiva: tu mercancía viaja sola en la unidad, sin compartir espacio ni hacer escalas para entregar la carga de otros clientes. Esto cuesta más que un envío consolidado o de paquetería (donde el costo se reparte entre varios clientes en el mismo camión), pero a cambio obtienes un servicio directo, más rápido y con control total sobre tu envío de principio a fin.",
+        },
+        {
           heading: "¿Cómo obtengo un precio exacto?",
           body: "Contáctanos por llamada o WhatsApp con origen, destino, tipo de carga y volumen aproximado, y te damos una cotización exacta sin compromiso.",
         },

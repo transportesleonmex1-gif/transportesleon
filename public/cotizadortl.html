@@ -632,6 +632,16 @@ function generarPDF() {
   doc.text(d.aplicarIva ? "TOTAL CON IVA:" : "TOTAL SIN IVA:", pad+6, y+4);
   doc.text("$"+Math.round(d.total).toLocaleString("es-MX"), W-pad-4, y+4, {align:"right"}); y += 16;
 
+  // Nota de servicio exclusivo (justifica la tarifa vs. paqueteria/consolidado)
+  doc.setFillColor(245,246,248);
+  doc.roundedRect(pad, y-3, cw, 18, 2, 2, "F");
+  doc.setFont("helvetica","bold"); doc.setFontSize(7.5); doc.setTextColor(27,77,184);
+  doc.text("¿Por que este precio vs. paqueteria/consolidado?", pad+4, y+1.5);
+  doc.setFont("helvetica","normal"); doc.setFontSize(7.3); doc.setTextColor(107,114,128);
+  var notaTxt = "Es un servicio EXPRESS y EXCLUSIVO: recogemos y entregamos puerta a puerta (no necesitas llevar tu carga a un centro de acopio), tu mercancia viaja sola sin escalas ni transbordos a otro camion (menor riesgo de maltrato), y no se mezcla con la carga de otros clientes.";
+  doc.text(doc.splitTextToSize(notaTxt, cw-8), pad+4, y+5.5);
+  y += 21;
+
   // Anticipo y saldo restante
   if (d.anticipo && d.anticipo > 0) {
     doc.setFillColor(240,247,240);
@@ -840,11 +850,14 @@ function generarTextoResumen() {
   } else {
     lineas.push("*TOTAL SIN IVA:* " + fmt(d.total));
   }
+  lineas.push("");
+  lineas.push("_¿Por que este precio vs. paqueteria/consolidado? Es un servicio EXPRESS y EXCLUSIVO: recogemos y entregamos puerta a puerta (no llevas tu carga a un centro de acopio), tu mercancia viaja sola sin escalas ni transbordos a otro camion (menor riesgo de maltrato), y no se mezcla con la carga de otros clientes._");
   if (d.anticipo && d.anticipo > 0) {
     lineas.push("*Anticipo:* " + fmt(d.anticipo));
     lineas.push("*Saldo restante:* " + fmt(d.saldo));
   }
   lineas.push("─────────────────────────");
+  lineas.push("_Servicio EXPRESS y EXCLUSIVO: tu carga viaja sola, sin escalas. No es consolidado ni paqueteria._");
   lineas.push("_No incluye maniobras de carga/descarga_");
   lineas.push("_Cotizacion vigente 15 dias_");
   lineas.push("*Tel:* 55 6185 7646");
