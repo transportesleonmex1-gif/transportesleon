@@ -21,6 +21,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const zonaTuristicaPages: MetadataRoute.Sitemap = siteConfig.zonasTuristicas.map((z) => ({
+    url: `${siteConfig.url}/zonas-turisticas/${z.slug}`,
+    lastModified: CONTENT_LAST_MODIFIED,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
   const routePages: MetadataRoute.Sitemap = siteConfig.routes.map((route) => ({
     url: `${siteConfig.url}/rutas/${route.slug}`,
     lastModified: CONTENT_LAST_MODIFIED,
@@ -65,6 +72,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     ...desdeQueretaroPages,
+    {
+      url: `${siteConfig.url}/zonas-turisticas`,
+      lastModified: CONTENT_LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    ...zonaTuristicaPages,
     ...retornoPages,
     ...cityPages,
     ...statePages,

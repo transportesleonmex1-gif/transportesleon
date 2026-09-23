@@ -53,6 +53,11 @@ export function Footer() {
                 Fletes desde Querétaro
               </Link>
             </li>
+            <li>
+              <Link href="/zonas-turisticas" className="hover:text-white transition-colors">
+                Zonas Turísticas
+              </Link>
+            </li>
           </ul>
         </div>
         <div>

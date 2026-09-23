@@ -706,6 +706,151 @@ export const siteConfig = {
       metaDescription: "Flete foráneo de Querétaro a Chihuahua (980 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
     },
   ],
+  zonasTuristicas: [
+    {
+      slug: "valle-de-bravo",
+      name: "Valle de Bravo",
+      km: 150,
+      duration: "2 horas aprox.",
+      requiereFerry: false,
+      metaTitle: "Flete a Valle de Bravo | Servicio Express",
+      intro:
+        "Valle de Bravo recibe mucho movimiento de casas de descanso y negocios turísticos los fines de semana, pero las paqueterías estándar suelen tardar días en llegar por ser una zona de menor volumen. Ofrecemos entrega directa y express sin esos tiempos de espera.",
+      metaDescription: "Flete dedicado a Valle de Bravo desde CDMX y zona metropolitana (150 km). Servicio express directo. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "san-miguel-de-allende",
+      name: "San Miguel de Allende",
+      km: 280,
+      duration: "3 h 15 min aprox.",
+      requiereFerry: false,
+      metaTitle: "Flete a San Miguel de Allende | Servicio Express",
+      intro:
+        "San Miguel de Allende tiene fuerte actividad turística y una gran comunidad extranjera, pero su ubicación fuera de las rutas principales de paquetería hace que los envíos estándar tarden más de lo esperado. Llegamos directo, sin escalas.",
+      metaDescription: "Flete dedicado a San Miguel de Allende desde CDMX y zona metropolitana (280 km). Servicio express directo. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "zihuatanejo",
+      name: "Zihuatanejo / Ixtapa",
+      km: 600,
+      duration: "7 horas aprox.",
+      requiereFerry: false,
+      metaTitle: "Flete a Zihuatanejo / Ixtapa | Servicio Express",
+      intro:
+        "Zihuatanejo e Ixtapa son destinos turísticos de la costa del Pacífico donde la cobertura de paquetería y consolidado es limitada. Ideal para mobiliario, equipo hotelero y mercancía comercial que necesita llegar sin depender de rutas de paquetería que no cubren bien la zona.",
+      metaDescription: "Flete dedicado a Zihuatanejo / Ixtapa desde CDMX y zona metropolitana (600 km). Servicio express directo. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "puerto-escondido",
+      name: "Puerto Escondido",
+      km: 650,
+      duration: "7 h 30 min aprox.",
+      requiereFerry: false,
+      metaTitle: "Flete a Puerto Escondido | Servicio Express",
+      intro:
+        "Puerto Escondido ha crecido muy rápido en los últimos años, más rápido de lo que la infraestructura de paquetería y consolidado ha podido cubrir. Ofrecemos servicio directo para negocios y hoteles que no pueden esperar los tiempos irregulares de paquetería en la zona.",
+      metaDescription: "Flete dedicado a Puerto Escondido desde CDMX y zona metropolitana (650 km). Servicio express directo. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "puerto-vallarta",
+      name: "Puerto Vallarta",
+      km: 900,
+      duration: "10 horas aprox.",
+      requiereFerry: false,
+      metaTitle: "Flete a Puerto Vallarta | Servicio Express",
+      intro:
+        "Puerto Vallarta es un destino turístico de gran movimiento comercial y hotelero. Aunque la ciudad sí tiene cobertura de paquetería, para carga voluminosa, mobiliario o equipo que no cabe en paquetería estándar, ofrecemos servicio de flete dedicado directo.",
+      metaDescription: "Flete dedicado a Puerto Vallarta desde CDMX y zona metropolitana (900 km). Servicio express directo. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "sayulita",
+      name: "Sayulita",
+      km: 950,
+      duration: "10 h 30 min aprox.",
+      requiereFerry: false,
+      metaTitle: "Flete a Sayulita | Servicio Express",
+      intro:
+        "Sayulita es un pueblo turístico pequeño donde la mayoría de las paqueterías grandes no entra directo o tarda considerablemente más que a Puerto Vallarta. Llevamos tu carga directo hasta el destino final, sin depender de centros de distribución regionales.",
+      metaDescription: "Flete dedicado a Sayulita desde CDMX y zona metropolitana (950 km). Servicio express directo. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "los-cabos",
+      name: "Los Cabos",
+      km: 1700,
+      duration: "18 horas aprox.",
+      requiereFerry: false,
+      metaTitle: "Flete a Los Cabos | Servicio Express",
+      intro:
+        "Los Cabos es un destino de alto valor comercial y hotelero, pero por su ubicación en la punta de la península, muchos envíos de paquetería estándar tardan considerablemente más o requieren varios trasbordos. Ofrecemos servicio directo de larga distancia.",
+      metaDescription: "Flete dedicado a Los Cabos desde CDMX y zona metropolitana (1700 km). Servicio express directo. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "playa-del-carmen",
+      name: "Playa del Carmen",
+      km: 1700,
+      duration: "18 horas aprox.",
+      requiereFerry: false,
+      metaTitle: "Flete a Playa del Carmen | Servicio Express",
+      intro:
+        "Playa del Carmen tiene fuerte demanda comercial y hotelera, y aunque cuenta con cobertura de paquetería, para carga de mayor volumen o mobiliario que no cabe en envíos estándar, ofrecemos flete dedicado directo desde CDMX y zona metropolitana.",
+      metaDescription: "Flete dedicado a Playa del Carmen desde CDMX y zona metropolitana (1700 km). Servicio express directo. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "tulum",
+      name: "Tulum",
+      km: 1750,
+      duration: "19 horas aprox.",
+      requiereFerry: false,
+      metaTitle: "Flete a Tulum | Servicio Express",
+      intro:
+        "Tulum ha tenido un crecimiento turístico y hotelero acelerado, y la infraestructura de paquetería y consolidado no siempre alcanza a cubrir la demanda de mobiliario, equipo y materiales que negocios y hoteles boutique necesitan recibir a tiempo.",
+      metaDescription: "Flete dedicado a Tulum desde CDMX y zona metropolitana (1750 km). Servicio express directo. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "bacalar",
+      name: "Bacalar",
+      km: 1850,
+      duration: "20 horas aprox.",
+      requiereFerry: false,
+      metaTitle: "Flete a Bacalar | Servicio Express",
+      intro:
+        "Bacalar es un destino turístico en crecimiento donde la cobertura de paquetería y consolidado es todavía muy limitada por tratarse de un municipio pequeño. Ofrecemos servicio de flete directo para negocios turísticos y hoteles de la zona.",
+      metaDescription: "Flete dedicado a Bacalar desde CDMX y zona metropolitana (1850 km). Servicio express directo. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "isla-mujeres",
+      name: "Isla Mujeres",
+      km: 1650,
+      duration: "18 horas aprox. + cruce en ferry desde Cancún",
+      requiereFerry: true,
+      metaTitle: "Flete a Isla Mujeres | Servicio Express",
+      intro:
+        "Isla Mujeres requiere cruzar en ferry desde Cancún, lo cual hace que muy pocas paqueterías ofrezcan servicio directo a la isla. Coordinamos el traslado completo, incluyendo el cruce en ferry, para que tu carga llegue directo sin que tengas que gestionar tú el cruce por separado.",
+      metaDescription: "Flete dedicado a Isla Mujeres desde CDMX y zona metropolitana (1650 km). Incluye cruce en ferry. Servicio express directo. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "cozumel",
+      name: "Cozumel",
+      km: 1700,
+      duration: "18 horas aprox. + cruce en ferry desde Playa del Carmen",
+      requiereFerry: true,
+      metaTitle: "Flete a Cozumel | Servicio Express",
+      intro:
+        "Cozumel requiere cruzar en ferry desde Playa del Carmen. Por esta logística adicional, la mayoría de las paqueterías estándar no cubre la isla de forma directa. Coordinamos el traslado completo, incluyendo el cruce en ferry.",
+      metaDescription: "Flete dedicado a Cozumel desde CDMX y zona metropolitana (1700 km). Incluye cruce en ferry. Servicio express directo. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "holbox",
+      name: "Holbox",
+      km: 1750,
+      duration: "19 horas aprox. + cruce en ferry desde Chiquilá",
+      requiereFerry: true,
+      metaTitle: "Flete a Holbox | Servicio Express",
+      intro:
+        "Holbox requiere cruzar en ferry desde Chiquilá, y al ser un destino pequeño y de difícil acceso vehicular, la cobertura de paquetería y consolidado prácticamente no existe. Coordinamos el traslado completo, incluyendo el cruce en ferry, directo hasta la isla.",
+      metaDescription: "Flete dedicado a Holbox desde CDMX y zona metropolitana (1750 km). Incluye cruce en ferry. Servicio express directo. Cotiza al 55 6185 7646.",
+    },
+  ],
   retornos: [
     {
       slug: "puebla",

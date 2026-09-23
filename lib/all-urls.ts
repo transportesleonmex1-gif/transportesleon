@@ -13,6 +13,10 @@ export function getAllUrls(): string[] {
   for (const d of siteConfig.desdeQueretaro) {
     urls.push(`${siteConfig.url}/queretaro/${d.slug}`);
   }
+  urls.push(`${siteConfig.url}/zonas-turisticas`);
+  for (const z of siteConfig.zonasTuristicas) {
+    urls.push(`${siteConfig.url}/zonas-turisticas/${z.slug}`);
+  }
   for (const route of siteConfig.routes) {
     urls.push(`${siteConfig.url}/rutas/${route.slug}`);
   }
