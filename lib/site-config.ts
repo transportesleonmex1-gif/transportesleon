@@ -101,6 +101,78 @@ export const siteConfig = {
       highlight: "Cobertura en todas las alcaldías y origen principal de rutas foráneas.",
       metaDescription: "Fletes locales y foráneos en Ciudad de México, CDMX. Cotiza al 55 6185 7646, servicio 24 horas, 1 a 30 toneladas.",
     },
+    {
+      slug: "coacalco",
+      name: "Coacalco de Berriozábal",
+      region: "Estado de México",
+      intro:
+        "En Coacalco de Berriozábal atendemos comercios, bodegas y zonas residenciales con acceso a la Vía López Portillo y la autopista México-Pachuca. Es un punto práctico de salida hacia el norte y el oriente del país, con unidades de carga ligera y pesada.",
+      highlight: "Salida rápida hacia la México-Pachuca y la Vía López Portillo.",
+      metaDescription: "Fletes locales y foráneos en Coacalco de Berriozábal, Estado de México. Cotiza al 55 6185 7646, servicio 24 horas, 1 a 30 toneladas.",
+    },
+    {
+      slug: "ecatepec",
+      name: "Ecatepec de Morelos",
+      region: "Estado de México",
+      intro:
+        "En Ecatepec de Morelos cubrimos la zona industrial y comercial del municipio, incluyendo corredores como Xalostoc y la Vía Morelos, con acceso a la autopista México-Pachuca. Movemos mercancía de fábricas, bodegas y comercios hacia CDMX y destinos foráneos.",
+      highlight: "Cobertura en zona industrial y corredores comerciales del municipio.",
+      metaDescription: "Fletes locales y foráneos en Ecatepec de Morelos, Estado de México. Cotiza al 55 6185 7646, servicio 24 horas, 1 a 30 toneladas.",
+    },
+    {
+      slug: "nezahualcoyotl",
+      name: "Nezahualcóyotl",
+      region: "Estado de México",
+      intro:
+        "En Nezahualcóyotl atendemos negocios, bodegas y comercios del oriente de la zona metropolitana, con salida hacia Puebla y el oriente del país. Damos servicio de carga ligera y pesada con unidad exclusiva para tu mercancía.",
+      highlight: "Servicio en el oriente metropolitano con salida hacia Puebla.",
+      metaDescription: "Fletes locales y foráneos en Nezahualcóyotl, Estado de México. Cotiza al 55 6185 7646, servicio 24 horas, 1 a 30 toneladas.",
+    },
+    {
+      slug: "chimalhuacan",
+      name: "Chimalhuacán",
+      region: "Estado de México",
+      intro:
+        "En Chimalhuacán damos servicio a comercios, talleres y bodegas del oriente del Estado de México, con salida hacia Puebla y el oriente del país. Llevamos tu carga directo, sin transbordos, en la unidad que necesites.",
+      highlight: "Fletes desde el oriente del Estado de México, con unidad exclusiva.",
+      metaDescription: "Fletes locales y foráneos en Chimalhuacán, Estado de México. Cotiza al 55 6185 7646, servicio 24 horas, 1 a 30 toneladas.",
+    },
+    {
+      slug: "nicolas-romero",
+      name: "Nicolás Romero",
+      region: "Estado de México",
+      intro:
+        "En Nicolás Romero atendemos negocios, bodegas y comercios del poniente de la zona metropolitana, cerca de Atizapán de Zaragoza y Cuautitlán Izcalli. Es una zona con buen acceso hacia el Bajío y el norte desde nuestra base en Naucalpan.",
+      highlight: "Servicio en el poniente metropolitano, cerca de nuestra base en Naucalpan.",
+      metaDescription: "Fletes locales y foráneos en Nicolás Romero, Estado de México. Cotiza al 55 6185 7646, servicio 24 horas, 1 a 30 toneladas.",
+    },
+    {
+      slug: "tultitlan",
+      name: "Tultitlán",
+      region: "Estado de México",
+      intro:
+        "En Tultitlán cubrimos una zona de industria, bodegas y centros de distribución junto a Cuautitlán Izcalli y Coacalco, con acceso a la Vía López Portillo y a la autopista México-Querétaro. Movemos carga industrial y comercial con unidad exclusiva.",
+      highlight: "Industria y bodegas con acceso a la México-Querétaro.",
+      metaDescription: "Fletes locales y foráneos en Tultitlán, Estado de México. Cotiza al 55 6185 7646, servicio 24 horas, 1 a 30 toneladas.",
+    },
+    {
+      slug: "tecamac",
+      name: "Tecámac",
+      region: "Estado de México",
+      intro:
+        "En Tecámac atendemos bodegas, parques logísticos y comercios del norte del Estado de México, sobre la autopista México-Pachuca y cerca del AIFA. Es una zona de crecimiento donde la carga completa hacia CDMX y destinos foráneos es cada vez más frecuente.",
+      highlight: "Zona logística en crecimiento sobre la México-Pachuca.",
+      metaDescription: "Fletes locales y foráneos en Tecámac, Estado de México. Cotiza al 55 6185 7646, servicio 24 horas, 1 a 30 toneladas.",
+    },
+    {
+      slug: "huixquilucan",
+      name: "Huixquilucan",
+      region: "Estado de México",
+      intro:
+        "En Huixquilucan atendemos comercios, obras y negocios de la zona de Interlomas y alrededores, vecina de Naucalpan. Movemos materiales, mobiliario comercial y mercancía con unidad exclusiva, hacia CDMX y destinos foráneos.",
+      highlight: "Comercio y construcción, junto a nuestra base en Naucalpan.",
+      metaDescription: "Fletes locales y foráneos en Huixquilucan, Estado de México. Cotiza al 55 6185 7646, servicio 24 horas, 1 a 30 toneladas.",
+    },
   ] as CityItem[],
   routes: [
     {
