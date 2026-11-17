@@ -46,7 +46,7 @@ export function Hero() {
             Llamar y cotizar ahora
           </a>
           <a
-            href={`https://wa.me/${siteConfig.whatsapp}?text=Hola,%20necesito%20un%20flete%20for%C3%A1neo`}
+            href={`https://wa.me/${siteConfig.whatsapp}?text=Hola,%20necesito%20cotizar%20un%20flete%20for%C3%A1neo%20(flete%20completo,%20unidad%20exclusiva)`}
             onClick={() => trackContact("whatsapp", "hero")}
             className="inline-flex items-center gap-2.5 bg-[#25D366] text-white text-[15px] font-semibold px-7 py-4 rounded-md hover:opacity-90 transition-opacity"
           >
@@ -60,6 +60,10 @@ export function Hero() {
           <li className="flex items-center gap-1.5">✅ Operador experimentado</li>
           <li className="flex items-center gap-1.5">✅ Precio por km</li>
         </ul>
+
+        <p className="mt-5 text-[13px] text-gris max-w-[440px]">
+          Fletes completos con unidad exclusiva para tu carga. No hacemos paquetería ni mudanzas.
+        </p>
       </div>
 
       <div className="relative overflow-hidden bg-gray-100 min-h-[280px] lg:min-h-full order-1 lg:order-2">

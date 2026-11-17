@@ -14,6 +14,9 @@ interface RouteItem {
   km: number;
   duration: string;
   metaTitle?: string;
+  stateSlug?: string;
+  zonas?: string;
+  cargas?: string;
   intro: string;
   metaDescription: string;
 }
@@ -205,6 +208,71 @@ export const siteConfig = {
       intro:
         "Servicio de flete foráneo de larga distancia desde CDMX y Naucalpan hacia Monterrey y su área metropolitana, con unidades preparadas para viajes largos, carga asegurada y facturación para empresas del corredor industrial regiomontano.",
       metaDescription: "Flete foráneo de CDMX a Monterrey (900 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza al 55 6185 7646.",
+    },
+    {
+      slug: "san-luis-potosi",
+      name: "San Luis Potosí",
+      km: 420,
+      duration: "5 h aprox.",
+      metaTitle: "Flete CDMX a San Luis Potosí",
+      stateSlug: "san-luis-potosi",
+      zonas: "Zona industrial de San Luis Potosí, Villa de Reyes, Soledad de Graciano Sánchez y centro de la ciudad.",
+      cargas: "Autopartes, mercancía de manufactura, material de empaque, equipo industrial y carga comercial para el corredor logístico del Bajío y el norte.",
+      intro:
+        "Flete foráneo desde CDMX y Naucalpan hacia San Luis Potosí capital y su corredor industrial, punto de enlace entre el centro y el norte del país. Unidad exclusiva para tu carga, de puerta a puerta.",
+      metaDescription: "Flete foráneo de CDMX a San Luis Potosí (420 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza por WhatsApp o al 55 6185 7646.",
+    },
+    {
+      slug: "chihuahua",
+      name: "Chihuahua",
+      km: 1450,
+      duration: "16 h aprox.",
+      metaTitle: "Flete CDMX a Chihuahua",
+      stateSlug: "chihuahua",
+      zonas: "Ciudad de Chihuahua, su zona industrial y maquiladora, y municipios cercanos.",
+      cargas: "Insumos para maquiladoras, equipo industrial, mercancía comercial, materiales y carga general de larga distancia al norte del país.",
+      intro:
+        "Servicio de flete foráneo de muy larga distancia desde CDMX y Naucalpan hacia Chihuahua capital y su zona industrial, con unidad exclusiva que viaja sola, sin transbordos, hasta tu destino.",
+      metaDescription: "Flete foráneo de CDMX a Chihuahua (1,450 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza por WhatsApp o al 55 6185 7646.",
+    },
+    {
+      slug: "veracruz",
+      name: "Veracruz",
+      km: 400,
+      duration: "5 h aprox.",
+      metaTitle: "Flete CDMX a Veracruz",
+      stateSlug: "veracruz",
+      zonas: "Puerto de Veracruz, Boca del Río, Xalapa, Córdoba, Orizaba y zonas industriales cercanas al puerto.",
+      cargas: "Mercancía de comercio exterior, carga de distribución, refacciones, materiales y carga comercial e industrial hacia el Golfo de México.",
+      intro:
+        "Flete foráneo desde CDMX y Naucalpan hacia Veracruz puerto, Xalapa y la zona del Golfo, para empresas de comercio exterior, distribución y carga industrial que necesitan una unidad dedicada a su mercancía.",
+      metaDescription: "Flete foráneo de CDMX a Veracruz (400 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza por WhatsApp o al 55 6185 7646.",
+    },
+    {
+      slug: "aguascalientes",
+      name: "Aguascalientes",
+      km: 480,
+      duration: "6 h aprox.",
+      metaTitle: "Flete CDMX a Aguascalientes",
+      stateSlug: "aguascalientes",
+      zonas: "Ciudad de Aguascalientes, parques industriales del corredor automotriz, zona de manufactura y centro.",
+      cargas: "Autopartes, componentes de manufactura, mercancía comercial, equipo y materiales para la industria automotriz del Bajío.",
+      intro:
+        "Flete foráneo desde CDMX y Naucalpan hacia Aguascalientes y su zona industrial, con unidades preparadas para carga automotriz y de manufactura de mediano y largo trayecto.",
+      metaDescription: "Flete foráneo de CDMX a Aguascalientes (480 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza por WhatsApp o al 55 6185 7646.",
+    },
+    {
+      slug: "merida",
+      name: "Mérida",
+      km: 1550,
+      duration: "19 h aprox.",
+      metaTitle: "Flete CDMX a Mérida, Yucatán",
+      stateSlug: "yucatan",
+      zonas: "Ciudad de Mérida, Umán, Kanasín, Progreso y su zona industrial.",
+      cargas: "Mercancía comercial, materiales de construcción, equipo, insumos para hoteles y negocios, y carga general hacia la península de Yucatán.",
+      intro:
+        "Servicio de flete foráneo de larga distancia desde CDMX y Naucalpan hacia Mérida y la península de Yucatán, para comercio, distribución y carga industrial que necesita llegar al sureste con una unidad exclusiva.",
+      metaDescription: "Flete foráneo de CDMX a Mérida, Yucatán (1,550 km). Unidades de 1 a 30 toneladas, servicio 24 horas. Cotiza por WhatsApp o al 55 6185 7646.",
     },
   ] as RouteItem[],
   states: [
@@ -411,29 +479,6 @@ export const siteConfig = {
   ],
   servicios: [
     {
-      slug: "renta-con-chofer",
-      title: "Renta de Camioneta de Carga con Chofer por Día, Semana o Mes",
-      metaTitle: "Renta con Chofer por Día, Semana o Mes",
-      badge: "Servicio recurrente",
-      metaDescription: "Renta de camioneta de carga con chofer por día, semana o mes en CDMX y Edomex. Flotilla de 1 a 30 toneladas. Cotiza al 55 6185 7646.",
-      intro:
-        "Si necesitas una unidad de carga de forma continua y no solo para un viaje único, ofrecemos renta de camioneta con chofer por día, semana o mes. Ideal para rutas de reparto diario, refuerzo temporal de flotilla, obra en construcción o cualquier operación que requiera transporte de carga de manera recurrente.",
-      sections: [
-        {
-          heading: "¿Cómo funciona?",
-          body: "Acuerdas contigo el periodo (día, semana o mes), el tipo de unidad según tu volumen de carga, y la unidad llega con chofer incluido. Tú defines las rutas y horarios de operación dentro del periodo contratado.",
-        },
-        {
-          heading: "¿Para quién es este servicio?",
-          body: "Empresas con rutas de distribución diaria, negocios que necesitan refuerzo temporal de flotilla en temporadas altas, constructoras que requieren transporte de materiales por proyecto, y cualquier operación que prefiera no invertir en flotilla propia.",
-        },
-        {
-          heading: "Unidades disponibles para renta con chofer",
-          body: "Desde camionetas NP300 hasta trailer de 53 pies, según el volumen y tipo de carga que manejes de forma recurrente.",
-        },
-      ],
-    },
-    {
       slug: "flete-urgente",
       title: "Flete Urgente CDMX — Servicio Express 24 Horas",
       metaTitle: "Flete Urgente CDMX 24 Horas",
@@ -459,9 +504,9 @@ export const siteConfig = {
     {
       slug: "cuanto-cuesta-un-flete",
       title: "¿Cuánto Cuesta un Flete? Factores que Afectan el Precio",
-      metaTitle: "¿Cuánto Cuesta un Flete?",
+      metaTitle: "¿Cuánto Cuesta un Flete? Qué Define el Precio",
       badge: "Guía informativa",
-      metaDescription: "¿Cuánto cuesta un flete en México? Conoce los factores que afectan el precio: distancia, tonelaje, tipo de unidad y urgencia. Cotiza gratis.",
+      metaDescription: "¿Cuánto cuesta un flete? Qué define el precio: distancia, toneladas, tipo de unidad y urgencia. Cotiza gratis por WhatsApp o llamada.",
       intro:
         "El costo de un flete varía según varios factores, y no hay una tarifa única que aplique a todos los casos. Aquí te explicamos qué determina el precio final, para que sepas qué información tener a la mano al momento de cotizar.",
       sections: [
@@ -968,9 +1013,9 @@ export const siteConfig = {
       icon: "leaf",
     },
     {
-      title: "Paquetería empresarial",
+      title: "Distribución empresarial",
       description:
-        "Distribución y entregas foráneas para empresas. Rutas fijas o por servicio según tu operación.",
+        "Cargas completas para distribución y entregas foráneas de empresas. Rutas fijas o por servicio según tu operación.",
       icon: "package",
     },
     {

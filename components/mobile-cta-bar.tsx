@@ -7,7 +7,7 @@ export function MobileCtaBar() {
   return (
     <div className="sm:hidden fixed bottom-0 left-0 right-0 z-50 grid grid-cols-2 shadow-[0_-4px_12px_rgba(0,0,0,0.1)]">
       <a
-        href={`https://wa.me/${siteConfig.whatsapp}?text=Hola,%20necesito%20cotizar%20un%20flete%20for%C3%A1neo`}
+        href={`https://wa.me/${siteConfig.whatsapp}?text=Hola,%20necesito%20cotizar%20un%20flete%20for%C3%A1neo%20(flete%20completo,%20unidad%20exclusiva)`}
         onClick={() => trackContact("whatsapp", "mobile_cta_bar")}
         className="flex items-center justify-center gap-2 bg-[#25D366] text-white text-sm font-bold py-4"
         aria-label="Cotizar por WhatsApp"

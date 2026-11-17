@@ -188,6 +188,34 @@ export default async function StatePage({ params }: Props) {
           </div>
         </section>
 
+        {/* Ruta directa desde CDMX */}
+        {(() => {
+          const ruta = siteConfig.routes.find(
+            (r) => "stateSlug" in r && r.stateSlug === state.slug
+          );
+          if (!ruta) return null;
+          return (
+            <section className="py-8 px-[6%]">
+              <Link
+                href={`/rutas/${ruta.slug}`}
+                className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-azul-light border border-azul rounded-lg px-6 py-5 hover:shadow-md transition-all"
+              >
+                <div>
+                  <div className="text-[15px] font-semibold text-azul">
+                    🚛 Salida directa desde CDMX a {ruta.name}
+                  </div>
+                  <div className="text-xs text-gris mt-1">
+                    {ruta.km} km, {ruta.duration}, con unidad exclusiva para tu carga
+                  </div>
+                </div>
+                <span className="text-azul font-bold text-sm whitespace-nowrap">
+                  Ver flete a {ruta.name} ›
+                </span>
+              </Link>
+            </section>
+          );
+        })()}
+
         {/* Otros estados */}
         <section className="py-14 px-[6%] bg-gris-claro">
           <h2 className="font-display text-[28px] sm:text-[36px] text-gray-900 leading-none mb-8">

@@ -4,7 +4,7 @@ import { siteConfig } from "@/lib/site-config";
 // Fecha de la última actualización de contenido (actualizar manualmente cuando
 // se agregue o edite contenido de rutas/ciudades/estados). Usar una fecha fija
 // evita que el sitemap reporte "recién modificado" en cada build sin motivo real.
-const CONTENT_LAST_MODIFIED = new Date("2026-07-08");
+const CONTENT_LAST_MODIFIED = new Date("2026-11-16");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const servicioPages: MetadataRoute.Sitemap = siteConfig.servicios.map((servicio) => ({

@@ -2,7 +2,6 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 
 const icons: Record<string, string> = {
-  "renta-con-chofer": "📅",
   "flete-urgente": "🚨",
   "cuanto-cuesta-un-flete": "💰",
   "tipos-de-camiones-de-carga": "🚛",

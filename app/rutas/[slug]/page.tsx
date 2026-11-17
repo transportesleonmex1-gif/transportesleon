@@ -224,6 +224,60 @@ export default async function RoutePage({ params }: Props) {
           </div>
         </section>
 
+        {/* Detalle de destino (solo rutas con contenido propio) */}
+        {(route.zonas || route.cargas) && (
+          <section className="py-14 px-[6%] bg-gris-claro">
+            <h2 className="font-display text-[28px] sm:text-[36px] text-gray-900 leading-none mb-8">
+              FLETE A {route.name.toUpperCase()}: DESTINO Y CARGA
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {route.zonas && (
+                <div className="bg-white border border-borde rounded-xl p-5">
+                  <div className="font-bold text-gray-900 text-[15px] mb-1">
+                    📍 Zonas de entrega en {route.name}
+                  </div>
+                  <p className="text-[13px] text-gris">{route.zonas}</p>
+                </div>
+              )}
+              {route.cargas && (
+                <div className="bg-white border border-borde rounded-xl p-5">
+                  <div className="font-bold text-gray-900 text-[15px] mb-1">
+                    📦 Qué cargas movemos
+                  </div>
+                  <p className="text-[13px] text-gris">{route.cargas}</p>
+                </div>
+              )}
+            </div>
+          </section>
+        )}
+
+        {/* Cobertura general del estado */}
+        {(() => {
+          if (!route.stateSlug) return null;
+          const state = siteConfig.states.find((st) => st.slug === route.stateSlug);
+          if (!state) return null;
+          return (
+            <section className="py-8 px-[6%]">
+              <Link
+                href={`/estados/${state.slug}`}
+                className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-azul-light border border-azul rounded-lg px-6 py-5 hover:shadow-md transition-all"
+              >
+                <div>
+                  <div className="text-[15px] font-semibold text-azul">
+                    🗺️ ¿Tu carga va a otra zona de {state.name}?
+                  </div>
+                  <div className="text-xs text-gris mt-1">
+                    Consulta la cobertura completa de transporte de carga en el estado
+                  </div>
+                </div>
+                <span className="text-azul font-bold text-sm whitespace-nowrap">
+                  Ver transporte a {state.name} ›
+                </span>
+              </Link>
+            </section>
+          );
+        })()}
+
         {/* Flete de retorno relacionado */}
         {(() => {
           const retorno = siteConfig.retornos.find(

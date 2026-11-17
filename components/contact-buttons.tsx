@@ -19,7 +19,7 @@ export function ContactButtons({ waMessage, location }: Props) {
         Llamar y cotizar
       </a>
       <a
-        href={`https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(waMessage)}`}
+        href={`https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(`${waMessage} (flete completo, unidad exclusiva)`)}`}
         onClick={() => trackContact("whatsapp", location)}
         className="inline-flex items-center gap-2.5 bg-[#25D366] text-white text-[15px] font-semibold px-7 py-4 rounded-md hover:opacity-90 transition-opacity"
       >

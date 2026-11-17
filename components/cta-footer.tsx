@@ -23,13 +23,16 @@ export function FinalCta() {
           {siteConfig.phoneDisplay} — Llamar ahora
         </a>
         <a
-          href={`https://wa.me/${siteConfig.whatsapp}?text=Hola,%20necesito%20cotizar%20un%20flete%20for%C3%A1neo`}
+          href={`https://wa.me/${siteConfig.whatsapp}?text=Hola,%20necesito%20cotizar%20un%20flete%20for%C3%A1neo%20(flete%20completo,%20unidad%20exclusiva)`}
           onClick={() => trackContact("whatsapp", "final_cta")}
           className="inline-flex items-center gap-2.5 bg-[#25D366] text-white text-[15px] font-bold px-7.5 py-4 rounded-md hover:opacity-90 transition-opacity"
         >
           WhatsApp directo
         </a>
       </div>
+      <p className="text-[13px] text-white/80 mt-6">
+        Fletes completos con unidad exclusiva. No hacemos paquetería ni mudanzas.
+      </p>
     </section>
   );
 }

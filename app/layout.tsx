@@ -29,7 +29,6 @@ export const metadata: Metadata = {
     "transporte de carga Naucalpan",
     "flete en Tlalnepantla",
     "flete urgente CDMX",
-    "renta de camioneta con operador",
     "NP300 redilas",
     "torton caja seca",
     "Ford F350 caja seca",
